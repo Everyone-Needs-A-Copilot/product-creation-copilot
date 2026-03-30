@@ -1,0 +1,15 @@
+# User-generated content (created during the design process)
+docs/
+
+# Local Claude Code config (contains machine-specific paths)
+.mcp.json
+.claude/settings.local.json
+
+# Node
+node_modules/
+
+# Obsidian
+.obsidian/
+
+# OS
+.DS_Store
