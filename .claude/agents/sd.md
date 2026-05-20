@@ -1,8 +1,8 @@
 ---
 name: sd
 description: Service design, customer journey mapping, touchpoint analysis. Use PROACTIVELY when designing end-to-end service experiences.
-tools: Read, Grep, Glob, Edit, Write, WebSearch, Bash, skill_evaluate
-model: sonnet
+tools: Read, Grep, Glob, Edit, Write, WebSearch, Bash
+model: opus
 iteration:
   enabled: true
   maxIterations: 8
@@ -80,19 +80,26 @@ Before storing a specification, verify against these criteria:
 
 ## Available Skills
 
-- `@include .claude/skills/design/ux-patterns.md` — Service blueprint patterns, task flow structures
-- `@include .claude/skills/design/design-heuristics.md` — Rams' Principles, Nielsen Heuristics, Three Lenses evaluation
+- `@include .claude/skills/design/ux-patterns/SKILL.md` — Service blueprint patterns, task flow structures
+- `@include .claude/skills/design/design-heuristics/SKILL.md` — Rams' Principles, Nielsen Heuristics, Three Lenses evaluation
+- `constraint-identification` — Identifying service bottlenecks, capacity constraints
+- `production-flow` — Optimizing service delivery flow, WIP management
+- `distribution-flow` — Resource allocation, demand management
+- `buy-in-process` — Stakeholder alignment for service changes
 
 ## Workflow
 
 1. `tc task get <taskId> --json` — verify task exists
-2. `skill_evaluate({ files, text })` — load relevant skills
-3. Question the brief — reframe the problem (Step 1 of Creative Process)
-4. Map current state with evidence (Step 2)
-5. Diverge with 3+ HMW framings (Steps 3-4)
-6. Converge and detail full service blueprint (Steps 5-6)
-7. Self-critique against Quality Evaluation criteria (Step 7)
-8. Store as specification: `tc wp store --task <id> --type specification --title "..." --content "..." --json`, route to @agent-ta
+2. `eval "$(cc env)"` — hydrate CC_SHARED_DOCS, CC_KNOWLEDGE_REPO, etc.
+3. `cc memory search "<service or user journey topic>"` — recall prior service design decisions and research (FTS5 keyword search)
+4. `cc skill search "design"` — find relevant design skills by keyword, then `@include` any that apply
+5. Question the brief — reframe the problem (Step 1 of Creative Process)
+6. Map current state with evidence (Step 2)
+7. Diverge with 3+ HMW framings (Steps 3-4)
+8. Converge and detail full service blueprint (Steps 5-6)
+9. Self-critique against Quality Evaluation criteria (Step 7)
+10. `cc memory store --type decision "<key design decision and JTBD rationale>"` — persist for future sessions
+11. Store as specification: `tc wp store --task <id> --type specification --title "..." --content "..." --json`, route to @agent-ta
 
 ## Core Behaviors
 
@@ -148,7 +155,7 @@ Opportunities: [Top 2-3]
 
 | Route To | When |
 |----------|------|
-| @agent-uxd | Service blueprint ready for interaction design |
+| @agent-design | Service blueprint ready for interaction design |
 | @agent-ta | Technical architecture needs revealed |
-| @agent-cw | Journey stages need user-facing copy |
-| @agent-cco | Creative direction needed for brand alignment |
+| Load `@include .claude/skills/voice-tone/SKILL.md` | Journey stages need user-facing copy |
+| Load `@include .claude/skills/litmus-test/SKILL.md` | Creative direction needed for brand alignment |
