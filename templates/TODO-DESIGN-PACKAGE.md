@@ -10,7 +10,7 @@
 
 | Status | Count |
 |--------|-------|
-| NOT STARTED | 16 |
+| NOT STARTED | 18 |
 | IN PROGRESS | 0 |
 | DONE | 0 |
 
@@ -52,6 +52,16 @@ Before continuing to Phase 3, confirm:
 
 ---
 
+## soul.md — DRAFT
+
+Draft the soul file immediately after the Design Foundation Checkpoint passes, before Phase 3 begins.
+
+| # | Document | Status | Notes |
+|---|----------|--------|-------|
+| — | `soul.md` (project root — not in docs/) | NOT STARTED | DRAFT v0.1: soul statement, IS/IS-NOT table, design principles with rejection tests, named anti-patterns, Feature Filter gates. See `skills/REF-soul-file.md` |
+
+---
+
 ## Phase 3: Requirements
 
 | # | Document | Status | Notes |
@@ -77,6 +87,16 @@ Before continuing to Phase 3, confirm:
 | # | Document | Status | Notes |
 |---|----------|--------|-------|
 | 15 | `05-design-challenge/00-brief.md` | NOT STARTED | Critical views, creative direction, concepts per view, evaluation criteria |
+
+---
+
+## soul.md — RATIFY
+
+Ratify the soul file after the design challenge brief (#15) is approved, before the Design Complete Checkpoint.
+
+| # | Document | Status | Notes |
+|---|----------|--------|-------|
+| — | `soul.md` (project root — ratify pass) | NOT STARTED | RATIFIED v1.0: populate case-law table with real in/out verdicts from Phases 3–5, settle founding decisions with dates, confirm principle priority order. See `skills/REF-soul-file.md` |
 
 ---
 

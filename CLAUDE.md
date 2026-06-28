@@ -69,10 +69,12 @@ After each phase completes, brief the user on what comes next before starting:
 | Transition | What to Say |
 |------------|------------|
 | Phase 1 → 2 | "Vision is set. Now we research — starting with a self-interview about who your users are." |
-| Phase 2 → 3 | "Service design is done. Now we turn those insights into requirements." |
+| Phase 2 → soul DRAFT | "Service design is done. Before requirements, we'll distill the product's soul — a decision instrument that captures what this product is and refuses to be, and a filter every future feature has to pass." |
+| Phase 2 → 3 | "Soul is drafted. Now we turn those insights into requirements — and we'll check every decision against the soul as we go." |
 | Phase 3 → 4 | "Requirements done. Now experience design — UX, UI, and voice." |
 | Phase 4 → 5 | "Experience design done. Last step before prototype: the design challenge brief." |
-| Phase 5 → 6 | "Brief is done. Time to create your prototype. What format do you want?" |
+| Phase 5 → soul RATIFY | "Brief is approved. Now we ratify the soul — locking the feature filter and founding decisions with the real calls we've made across every phase." |
+| Phase 5 → 6 | "Soul is ratified. Time to create your prototype. What format do you want?" |
 
 ## Prototype Output Phase
 
@@ -130,6 +132,10 @@ NEVER include time estimates (hours, days, weeks, sprints). Use phases, priority
 | User's docs | `docs/` (created during setup) |
 | Progress tracker | `docs/TODO-DESIGN-PACKAGE.md` |
 | Quickstart | `quickstart.md` |
+| soul.md (per product) | Project root — created during process; DRAFT after Phase 2, RATIFIED after Phase 5 |
+| Soul template | `templates/soul.md` |
+| Soul facilitation guide (new project) | `skills/REF-soul-file.md` |
+| Soul retrofit guide (existing project) | `skills/SKILL-soul-retrofit.md` |
 
 ---
 

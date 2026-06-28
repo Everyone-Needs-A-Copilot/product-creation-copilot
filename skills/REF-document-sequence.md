@@ -20,6 +20,7 @@ Phase 2: Research & Service Design
   8. 10-service-blueprint.md (optional for simple products)
 
   ── DESIGN FOUNDATION CHECKPOINT ──
+  ░░ SOUL — DRAFT PASS  →  soul.md v0.1 (project root) ░░
 
 Phase 3: Requirements
   9.  10-user-stories.md
@@ -33,6 +34,7 @@ Phase 4: Experience Design
 
 Phase 5: Design Challenge
   15. 00-brief.md
+  ░░ SOUL — RATIFY PASS  →  soul.md v1.0 (project root) ░░
 
   ── DESIGN COMPLETE CHECKPOINT ──
 
@@ -87,6 +89,20 @@ Phase 6: Prototype (user chooses one)
 1. Create missing doc(s) now (pause downstream work)
 2. Proceed without doc(s) using best judgment (list risks)
 
+### Soul — DRAFT Pass
+
+The soul file is created immediately after the Design Foundation Checkpoint, before Phase 3 begins.
+
+| Output | Path | Role | Prerequisites | What It Produces |
+|--------|------|------|--------------|-----------------|
+| `soul.md` (DRAFT v0.1) | **Project root** | Industrial Designer (essentialism lens) | Documents #1–7; builds specifically on the Capabilities & Essence section (Round 7) of `00-vision.md` | Draft soul statement, IS / IS-NOT table, design principles with rejection tests, named anti-patterns, Feature Filter gates, first-draft quality bar and voice |
+
+**Notes:**
+- Full facilitation guide: `skills/REF-soul-file.md`
+- Builds directly on vision Round 7 (Capabilities & Essence) — that section is the upstream input the soul DRAFT formalises into a decision instrument
+- Output path is the **project root** as `soul.md`, NOT inside `docs/` — it is a cross-phase decision instrument, not a phase deliverable
+- All Phase 3–5 documents should be checked against the draft soul as they are written
+
 ### Phase 3: Requirements
 
 | # | File | Agent | Prerequisites | What It Produces |
@@ -123,6 +139,19 @@ Phase 6: Prototype (user chooses one)
 - This document synthesizes everything into an actionable brief for the prototype phase
 - It must be specific enough that the design team can produce a prototype without further clarification
 - The user must approve this brief before prototype work begins (Design Complete Checkpoint)
+
+### Soul — RATIFY Pass
+
+The soul file is ratified after Document #15 is approved and before the Design Complete Checkpoint runs.
+
+| Output | Path | Role | Prerequisites | What It Produces |
+|--------|------|------|--------------|-----------------|
+| `soul.md` (RATIFIED v1.0) | **Project root** | Industrial Designer (essentialism lens) + Design Lead | soul.md DRAFT; Document #15 (design challenge brief) | Populated case-law table, founding decisions settled and dated, principle priority order confirmed, soul marked RATIFIED v1.0 |
+
+**Notes:**
+- Full facilitation guide: `skills/REF-soul-file.md`
+- The brief (#15) surfaces the real trade-offs that populate the case-law table; the founding decisions convert open questions into settled, dated calls
+- After ratification, run the Design Complete Checkpoint
 
 ### Design Complete Checkpoint
 
@@ -163,4 +192,5 @@ The user chooses one output format based on their needs and audience. Only one i
 | UI Designer | UIDS | 4 |
 | Copywriter | CW | 4 |
 | Design Lead | Design Lead | 5 |
+| Industrial Designer (essentialism lens) | ID | Soul DRAFT (after Phase 2) + Soul RATIFY (after Phase 5) |
 | Implementation Team | — | 6 |
