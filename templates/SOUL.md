@@ -26,7 +26,7 @@
 <!--
 USING THIS TEMPLATE
 ===================
-- This file lives at the PROJECT ROOT as `soul.md` — not inside docs/. It is a
+- This file lives at the PROJECT ROOT as `SOUL.md` — not inside docs/. It is a
   living, root-level artifact you consult whenever a feature decision comes up.
 - Fill each section by interview, one question at a time. The full facilitation
   guide — interview questions per section, synthesis rules, and the Define-Done

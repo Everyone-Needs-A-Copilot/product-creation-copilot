@@ -19,11 +19,11 @@ The facilitation skill (conversation technique, synthesis rules, document sequen
 |-------|-------|--------|
 | 1: Discovery | Vision, scope, metrics | 3 documents |
 | 2: Research & Service Design | Interviews, JTBD, journey maps, moments that matter, service blueprint | 5 documents |
-| After Phase 2 — Soul DRAFT | Distil the product's soul: IS/IS-NOT, design principles, anti-patterns, Feature Filter | `soul.md` at project root (DRAFT v0.1) — north star for Phases 3–5 |
+| After Phase 2 — Soul DRAFT | Distil the product's soul: IS/IS-NOT, design principles, anti-patterns, Feature Filter | `SOUL.md` at project root (DRAFT v0.1) — north star for Phases 3–5 |
 | 3: Requirements | User stories, use cases, acceptance criteria | 3 documents |
 | 4: Experience Design | UX design, UI design, copy and voice | 3 documents |
 | 5: Design Challenge | Creative brief | 1 document |
-| After Phase 5 — Soul RATIFY | Lock case law, founding decisions, principle priority order | `soul.md` updated to RATIFIED v1.0 — decision instrument locked before prototype |
+| After Phase 5 — Soul RATIFY | Lock case law, founding decisions, principle priority order | `SOUL.md` updated to RATIFIED v1.0 — decision instrument locked before prototype |
 | 6: Prototype | Figma / design spec / Storybook / Next.js | Your choice |
 
 ---
@@ -218,9 +218,9 @@ Not sure which to choose? Tell Claude what you want to do with the output and it
 | Facilitation skill | `skills/SKILL.md` | How to conduct conversations and synthesize answers |
 | Progress tracker | `docs/TODO-DESIGN-PACKAGE.md` | Operational status for all documents |
 | Project instructions | `CLAUDE.md` | How Claude behaves in this project (auto-loaded) |
-| Soul template | `templates/soul.md` | Template for the root-level decision instrument (copied to project root as `soul.md`) |
-| Soul facilitation guide | `skills/REF-soul-file.md` | Per-section interview questions, synthesis rules, and Define-Done bar for soul.md |
-| Soul retrofit skill | `skills/SKILL-soul-retrofit.md` | Creating soul.md for a project that already has documentation or code |
+| Soul template | `templates/SOUL.md` | Template for the root-level decision instrument (copied to project root as `SOUL.md`) |
+| Soul facilitation guide | `skills/REF-soul-file.md` | Per-section interview questions, synthesis rules, and Define-Done bar for SOUL.md |
+| Soul retrofit skill | `skills/SKILL-soul-retrofit.md` | Creating SOUL.md for a project that already has documentation or code |
 | Figma prototype guide | `docs/06-prototype/00-figma-design.md` | Created during setup when Figma is chosen |
 | Design spec guide | `docs/06-prototype/10-design-spec.md` | Created during setup when spec is chosen |
 | Storybook guide | `docs/06-prototype/20-storybook.md` | Created during setup when Storybook is chosen |

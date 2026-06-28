@@ -20,7 +20,7 @@ Phase 2: Research & Service Design
   8. 10-service-blueprint.md (optional for simple products)
 
   ── DESIGN FOUNDATION CHECKPOINT ──
-  ░░ SOUL — DRAFT PASS  →  soul.md v0.1 (project root) ░░
+  ░░ SOUL — DRAFT PASS  →  SOUL.md v0.1 (project root) ░░
 
 Phase 3: Requirements
   9.  10-user-stories.md
@@ -34,7 +34,7 @@ Phase 4: Experience Design
 
 Phase 5: Design Challenge
   15. 00-brief.md
-  ░░ SOUL — RATIFY PASS  →  soul.md v1.0 (project root) ░░
+  ░░ SOUL — RATIFY PASS  →  SOUL.md v1.0 (project root) ░░
 
   ── DESIGN COMPLETE CHECKPOINT ──
 
@@ -95,12 +95,12 @@ The soul file is created immediately after the Design Foundation Checkpoint, bef
 
 | Output | Path | Role | Prerequisites | What It Produces |
 |--------|------|------|--------------|-----------------|
-| `soul.md` (DRAFT v0.1) | **Project root** | Industrial Designer (essentialism lens) | Documents #1–7; builds specifically on the Capabilities & Essence section (Round 7) of `00-vision.md` | Draft soul statement, IS / IS-NOT table, design principles with rejection tests, named anti-patterns, Feature Filter gates, first-draft quality bar and voice |
+| `SOUL.md` (DRAFT v0.1) | **Project root** | Industrial Designer (essentialism lens) | Documents #1–7; builds specifically on the Capabilities & Essence section (Round 7) of `00-vision.md` | Draft soul statement, IS / IS-NOT table, design principles with rejection tests, named anti-patterns, Feature Filter gates, first-draft quality bar and voice |
 
 **Notes:**
 - Full facilitation guide: `skills/REF-soul-file.md`
 - Builds directly on vision Round 7 (Capabilities & Essence) — that section is the upstream input the soul DRAFT formalises into a decision instrument
-- Output path is the **project root** as `soul.md`, NOT inside `docs/` — it is a cross-phase decision instrument, not a phase deliverable
+- Output path is the **project root** as `SOUL.md`, NOT inside `docs/` — it is a cross-phase decision instrument, not a phase deliverable
 - All Phase 3–5 documents should be checked against the draft soul as they are written
 
 ### Phase 3: Requirements
@@ -146,7 +146,7 @@ The soul file is ratified after Document #15 is approved and before the Design C
 
 | Output | Path | Role | Prerequisites | What It Produces |
 |--------|------|------|--------------|-----------------|
-| `soul.md` (RATIFIED v1.0) | **Project root** | Industrial Designer (essentialism lens) + Design Lead | soul.md DRAFT; Document #15 (design challenge brief) | Populated case-law table, founding decisions settled and dated, principle priority order confirmed, soul marked RATIFIED v1.0 |
+| `SOUL.md` (RATIFIED v1.0) | **Project root** | Industrial Designer (essentialism lens) + Design Lead | SOUL.md DRAFT; Document #15 (design challenge brief) | Populated case-law table, founding decisions settled and dated, principle priority order confirmed, soul marked RATIFIED v1.0 |
 
 **Notes:**
 - Full facilitation guide: `skills/REF-soul-file.md`

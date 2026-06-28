@@ -4,7 +4,7 @@ This package guides product designers through facilitated conversations to creat
 
 ## What This Package Contains
 
-17 standard outputs across 6 phases — 16 facilitated design documents (copied into `docs/`) plus `soul.md`, a root-level decision instrument drafted after Phase 2 and ratified after Phase 5. Every facilitated document contains an embedded facilitation guide as HTML comments — these guides tell Claude how to conduct the conversation, what questions to ask, and how to synthesize the output.
+17 standard outputs across 6 phases — 16 facilitated design documents (copied into `docs/`) plus `SOUL.md`, a root-level decision instrument drafted after Phase 2 and ratified after Phase 5. Every facilitated document contains an embedded facilitation guide as HTML comments — these guides tell Claude how to conduct the conversation, what questions to ask, and how to synthesize the output.
 
 ## How It Is Organized
 
@@ -12,11 +12,11 @@ This package guides product designers through facilitated conversations to creat
 |-------|--------|---------|
 | 1 — Discovery | `00-overview/` | Vision, scope, success metrics |
 | 2 — Research & Service Design | `01-research/` + `02-service-design/` | Interviews, journeys, JTBD, moments |
-| After Phase 2 — Soul DRAFT | Project root (`soul.md`) | Distil the product's soul: IS/IS-NOT, design principles, anti-patterns, Feature Filter (DRAFT v0.1) |
+| After Phase 2 — Soul DRAFT | Project root (`SOUL.md`) | Distil the product's soul: IS/IS-NOT, design principles, anti-patterns, Feature Filter (DRAFT v0.1) |
 | 3 — Requirements | `03-requirements/` | User stories, use cases, acceptance criteria |
 | 4 — Experience Design | `04-experience-design/` | UX, UI, copy and voice |
 | 5 — Design Challenge | `05-design-challenge/` | Critical views brief |
-| After Phase 5 — Soul RATIFY | Project root (`soul.md`) | Lock case law, founding decisions, principle priority order (RATIFIED v1.0) |
+| After Phase 5 — Soul RATIFY | Project root (`SOUL.md`) | Lock case law, founding decisions, principle priority order (RATIFIED v1.0) |
 | 6 — Prototype | `06-prototype/` | Figma, design spec, Storybook, or Next.js |
 
 ## How to Use It

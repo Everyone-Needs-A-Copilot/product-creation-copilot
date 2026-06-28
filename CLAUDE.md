@@ -132,8 +132,8 @@ NEVER include time estimates (hours, days, weeks, sprints). Use phases, priority
 | User's docs | `docs/` (created during setup) |
 | Progress tracker | `docs/TODO-DESIGN-PACKAGE.md` |
 | Quickstart | `quickstart.md` |
-| soul.md (per product) | Project root — created during process; DRAFT after Phase 2, RATIFIED after Phase 5 |
-| Soul template | `templates/soul.md` |
+| SOUL.md (per product) | Project root — created during process; DRAFT after Phase 2, RATIFIED after Phase 5 |
+| Soul template | `templates/SOUL.md` |
 | Soul facilitation guide (new project) | `skills/REF-soul-file.md` |
 | Soul retrofit guide (existing project) | `skills/SKILL-soul-retrofit.md` |
 

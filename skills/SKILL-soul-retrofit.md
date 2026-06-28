@@ -1,8 +1,8 @@
 ---
 name: soul-retrofit
-description: Retrofits a soul file (soul.md) onto an EXISTING project or product that already has documentation and/or a codebase. Analyzes existing docs and the code surface to draft as much of the soul as the evidence supports, identifies what only the owner knows, interviews to close those gaps, and writes a ratified soul.md to the target project root.
+description: Retrofits a soul file (SOUL.md) onto an EXISTING project or product that already has documentation and/or a codebase. Analyzes existing docs and the code surface to draft as much of the soul as the evidence supports, identifies what only the owner knows, interviews to close those gaps, and writes a ratified SOUL.md to the target project root.
 triggers:
-  keywords: ["soul file", "retrofit soul", "add soul to existing project", "decision instrument", "soul.md", "feature filter for existing product"]
+  keywords: ["soul file", "retrofit soul", "add soul to existing project", "decision instrument", "SOUL.md", "feature filter for existing product"]
 allowed-tools: Read, Write, Edit, Glob, Grep, Bash, Agent
 ---
 
@@ -18,10 +18,10 @@ evidence into a draft, find the gaps only the owner can fill, and close them wit
 the minimum number of questions.
 
 **Point it at any repo.** The owner names a target project; you read its real
-files and produce `soul.md` at that project's root.
+files and produce `SOUL.md` at that project's root.
 
 ### Read these first
-- `templates/soul.md` — the 10-section structure you will fill. **Do not restate it here; fill it.**
+- `templates/SOUL.md` — the 10-section structure you will fill. **Do not restate it here; fill it.**
 - `REF-soul-file.md` — the per-section interview questions, synthesis rules, and Define-Done bar. The retrofit interview (Step 3) draws from the same question bank; this skill only adds *which* questions to ask given what analysis already answered.
 
 ### Define Done
@@ -29,7 +29,7 @@ files and produce `soul.md` at that project's root.
 - [ ] Draft soul produced, with inferred content clearly marked
 - [ ] Gap list produced — exactly which sections/fields evidence could not determine
 - [ ] Owner interviewed to close gaps (one question at a time)
-- [ ] `soul.md` written to the **target project root**, ratified with a date and a v1.0 changelog entry
+- [ ] `SOUL.md` written to the **target project root**, ratified with a date and a v1.0 changelog entry
 - [ ] Meets the soul-file Define-Done bar in `REF-soul-file.md` (every principle testable, every anti-pattern named, Feature Filter usable in under a minute, IS / IS-NOT populated)
 
 ---
@@ -40,7 +40,7 @@ files and produce `soul.md` at that project's root.
 STEP 1  Analyze   → read docs + survey code → DRAFT soul (mark inferences)
 STEP 2  Gap-find  → list what evidence could NOT determine (owner-only knowledge)
 STEP 3  Interview → ask the MINIMUM questions to close the gaps, one at a time
-STEP 4  Synthesize→ write soul.md to target root, ratified, v1.0 changelog
+STEP 4  Synthesize→ write SOUL.md to target root, ratified, v1.0 changelog
 ```
 
 The balance between Steps 1 and 3 depends on how rich the project's docs are
@@ -79,7 +79,7 @@ ls <target>/src <target>/app <target>/lib 2>/dev/null
 ```
 
 ### Draft the soul
-Fill `templates/soul.md` as far as the evidence supports. For each inferred item,
+Fill `templates/SOUL.md` as far as the evidence supports. For each inferred item,
 mark it so it's unmistakably a guess to confirm:
 
 ```
@@ -163,7 +163,7 @@ decided each, and why?" Borderline calls make the best rows.
 ## STEP 4 — Synthesize & Write
 
 1. Merge inferred (confirmed) content with interview answers into the full
-   `templates/soul.md` structure. Remove the `INFERRED / CONFIRM` markers once
+   `templates/SOUL.md` structure. Remove the `INFERRED / CONFIRM` markers once
    confirmed; keep `<!-- TODO -->` on anything still genuinely open.
 2. Apply the soul-file **synthesis rules** from `REF-soul-file.md`: owner's own
    words; every principle carries a concrete rejection test; every anti-pattern
@@ -171,7 +171,7 @@ decided each, and why?" Borderline calls make the best rows.
 3. Verify against the **Define Done** bar in `REF-soul-file.md`. If the Feature
    Filter isn't usable in under a minute, or a principle has no rejection, it's
    not done — go back to Step 3 for that gap.
-4. Write `soul.md` to the **target project root** (not inside its `docs/`).
+4. Write `SOUL.md` to the **target project root** (not inside its `docs/`).
 5. Ratify with the owner: walk the whole file, get explicit agreement, set the
    status line to **RATIFIED v1.0** with today's date, and add the changelog row:
 
@@ -191,9 +191,9 @@ The retrofit shifts weight between analysis and interview depending on what exis
 | **Thin docs** (sparse README, code only) | Code survey still yields the feature surface, vocabulary, and boundaries-by-absence — but the *why* is missing. Interview-heavy: this looks close to the new-project flow in `REF-soul-file.md`. Use that flow's full question bank, informed by what the code already revealed. |
 | **No docs, early code** | Treat as near-greenfield. Run essentially the new-project DRAFT pass, using the code only to ground vocabulary and the feature surface. Expect to interview most sections. |
 
-In all cases the output is identical: a ratified `soul.md` at the project root
+In all cases the output is identical: a ratified `SOUL.md` at the project root
 that passes the Define-Done bar.
 
 ---
 
-**Related:** [Soul template](../templates/soul.md) | [Soul file reference](REF-soul-file.md) | [Facilitation process](REF-facilitation-process.md)
+**Related:** [Soul template](../templates/SOUL.md) | [Soul file reference](REF-soul-file.md) | [Facilitation process](REF-facilitation-process.md)

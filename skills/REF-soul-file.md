@@ -1,10 +1,10 @@
 # Soul File Reference
 
-How to facilitate the creation of a product's **soul file** (`soul.md`) — the
+How to facilitate the creation of a product's **soul file** (`SOUL.md`) — the
 per-product decision instrument that decides whether a feature belongs in the
 product by staying true to its purpose.
 
-This is the companion to the template at `templates/soul.md`. Read both before
+This is the companion to the template at `templates/SOUL.md`. Read both before
 facilitating. For retrofitting a soul onto an existing project that already has
 docs or code, use `skills/SKILL-soul-retrofit.md` instead.
 
@@ -21,7 +21,7 @@ feature belongs in this product.
 | A filter that produces in/out verdicts | A mission poster or brand manifesto |
 | Made of testable principles and named traps | A list of aspirational adjectives |
 | Living — drafted, ratified, versioned | A one-time deliverable signed off and shelved |
-| A root-level artifact (`soul.md`) | A doc buried in `docs/` |
+| A root-level artifact (`SOUL.md`) | A doc buried in `docs/` |
 
 The gold-standard reference for structure and voice is Convoco's `SOUL.md`. Study
 how every principle carries a *rejection test*, every anti-pattern is a *named*
@@ -41,7 +41,7 @@ Phase 1: Discovery
 Phase 2: Research & Service Design
   └── DESIGN FOUNDATION CHECKPOINT
         ▼
-   ░░ SOUL — DRAFT PASS (v0.1) ░░   ← draft soul.md now; it guides Phases 3–5
+   ░░ SOUL — DRAFT PASS (v0.1) ░░   ← draft SOUL.md now; it guides Phases 3–5
         ▼
 Phase 3: Requirements
 Phase 4: Experience Design
@@ -199,11 +199,11 @@ The soul file is done (RATIFIED) when **all** of these are true:
 - [ ] **Section 8** drift signals fire early enough to act on.
 - [ ] **Section 9** Founding Decisions are settled and **dated**, including the priority order when principles conflict.
 - [ ] **Section 10** changelog shows the DRAFT (v0.1) and RATIFIED (v1.0) entries with dates and rationale.
-- [ ] The file lives at the **project root** as `soul.md`, and the status line reads **RATIFIED v1.0**.
+- [ ] The file lives at the **project root** as `SOUL.md`, and the status line reads **RATIFIED v1.0**.
 
 If a simple product scaled sections down, that's fine — but the Feature Filter
 and the IS / IS-NOT table are never optional. They are the instrument.
 
 ---
 
-**Related:** [Soul template](../templates/soul.md) | [Soul retrofit skill](SKILL-soul-retrofit.md) | [Facilitation process](REF-facilitation-process.md) | [Document sequence](REF-document-sequence.md)
+**Related:** [Soul template](../templates/SOUL.md) | [Soul retrofit skill](SKILL-soul-retrofit.md) | [Facilitation process](REF-facilitation-process.md) | [Document sequence](REF-document-sequence.md)

@@ -22,8 +22,8 @@ Read these before starting:
 |----------|------|-----------------|
 | Facilitation Process | `./REF-facilitation-process.md` | How to conduct conversations, adapt questions, synthesize answers, track progress |
 | Document Sequence | `./REF-document-sequence.md` | The full structure across 6 phases with prerequisites and checkpoint checks |
-| Soul File Reference | `./REF-soul-file.md` | Per-section interview questions, synthesis rules, and Define-Done bar for creating soul.md (new projects) |
-| Soul Retrofit | `./SKILL-soul-retrofit.md` | Creating soul.md for an existing project that already has documentation or code |
+| Soul File Reference | `./REF-soul-file.md` | Per-section interview questions, synthesis rules, and Define-Done bar for creating SOUL.md (new projects) |
+| Soul Retrofit | `./SKILL-soul-retrofit.md` | Creating SOUL.md for an existing project that already has documentation or code |
 
 ## Define Done
 
@@ -33,11 +33,11 @@ Read these before starting:
 - [ ] At least 1 interview artifact completed
 - [ ] All Phase 2 documents completed (JTBD, journeys, moments, blueprint)
 - [ ] Design Foundation Checkpoint passes
-- [ ] soul.md DRAFTED at project root (DRAFT v0.1) — immediately after Phase 2, before Phase 3 begins; see `skills/REF-soul-file.md`
+- [ ] SOUL.md DRAFTED at project root (DRAFT v0.1) — immediately after Phase 2, before Phase 3 begins; see `skills/REF-soul-file.md`
 - [ ] Phase 3 documents completed (user stories, use cases, acceptance criteria)
 - [ ] Phase 4 documents completed (UX, UI, copy/voice)
 - [ ] Design challenge brief completed
-- [ ] soul.md RATIFIED at project root (RATIFIED v1.0) — after the design challenge brief is approved, before prototype; see `skills/REF-soul-file.md`
+- [ ] SOUL.md RATIFIED at project root (RATIFIED v1.0) — after the design challenge brief is approved, before prototype; see `skills/REF-soul-file.md`
 - [ ] TODO-DESIGN-PACKAGE.md status updated for all completed documents
 - [ ] Design Complete Checkpoint passes
 - [ ] Prototype output created in chosen format
