@@ -17,9 +17,88 @@
           "checksum": "sha256:ceb06af54f5a832acb74d3adde1b3f2bc2e51d9529255c9ee4d69481f981189f",
           "ownership": "framework",
           "path": ".claude/fitness-check.sh"
+        },
+        {
+          "checksum": "sha256:2ff38954425770c294318b1de55900a9e775330b0f50640712fd71c692e8d019",
+          "ownership": "framework",
+          "path": ".claude/agents/cco.md"
+        },
+        {
+          "checksum": "sha256:fa5f1b0f47f2097e4a657ef6e097e6826005631e84175626044f585657d078dc",
+          "ownership": "framework",
+          "path": ".claude/agents/cpa.md"
+        },
+        {
+          "checksum": "sha256:23cf8794187a192d722ae8229d1c175a8ddcd64951c81b3f8a04327e3b50f47c",
+          "ownership": "framework",
+          "path": ".claude/agents/cs.md"
+        },
+        {
+          "checksum": "sha256:c3ca6d06409450501023945d037b45a18e92521889bf0c5c8658b700dcb93d49",
+          "ownership": "framework",
+          "path": ".claude/agents/cw.md"
+        },
+        {
+          "checksum": "sha256:6ba3f6b08cc117874bc0066ed7c4ae52e171054c8280e572a6e5ec1652c3d2e8",
+          "ownership": "framework",
+          "path": ".claude/agents/do.md"
+        },
+        {
+          "checksum": "sha256:c00971ad39e992fb2b0081a56a0c067c0b3a3590741942e4d9e36e742ff0b977",
+          "ownership": "framework",
+          "path": ".claude/agents/doc.md"
+        },
+        {
+          "checksum": "sha256:e3897b4a27c49128bb2567556d84fddf152af05b64465bc47848aa08b204556e",
+          "ownership": "framework",
+          "path": ".claude/agents/ind.md"
+        },
+        {
+          "checksum": "sha256:c24245e51e6f6a8f7c704975b0a93641aee80dc28e928009c885782663c1edb6",
+          "ownership": "framework",
+          "path": ".claude/agents/kc.md"
+        },
+        {
+          "checksum": "sha256:89f20687a4ab76e3ced337cecee3811e8271bd7a55faeff2bec06e76c5675b75",
+          "ownership": "framework",
+          "path": ".claude/agents/me.md"
+        },
+        {
+          "checksum": "sha256:2869f941067e20cb5f58e1776c6ab73aec3a90c8c2d15948e1571c7f2d07fbc5",
+          "ownership": "framework",
+          "path": ".claude/agents/qa.md"
+        },
+        {
+          "checksum": "sha256:250c7a06c26899b697ba6ce324a189bc6686114f779f4af1fb36d13ce247345b",
+          "ownership": "framework",
+          "path": ".claude/agents/sd.md"
+        },
+        {
+          "checksum": "sha256:fff4923b8690b509bc27fbefd5e885b64dfe3914d40056e8776117a67158f715",
+          "ownership": "framework",
+          "path": ".claude/agents/sec.md"
+        },
+        {
+          "checksum": "sha256:32bb15d5beb7b4555a5c423c361eb838a235497cdd3659760fd27034c4264914",
+          "ownership": "framework",
+          "path": ".claude/agents/ta.md"
+        },
+        {
+          "checksum": "sha256:0a0495798fd93f73478f56ec8dccfb256ba57ba922767a0a7c40b807d1e64889",
+          "ownership": "framework",
+          "path": ".claude/agents/uid.md"
+        },
+        {
+          "checksum": "sha256:6c500dbba079599d6209b132cf961fa75db6fb7eba4f25af58e541594087ddaa",
+          "ownership": "framework",
+          "path": ".claude/agents/uids.md"
+        },
+        {
+          "checksum": "sha256:f2f42f6f9f2493433638a0b2c012b48aa69028011bdee26dfe7a8376c495ccc4",
+          "ownership": "framework",
+          "path": ".claude/agents/uxd.md"
         }
       ],
-      "ownership_mode": "customized-preserve",
       "release_tag": "v5.13.3",
       "version": "5.13.3"
     },
