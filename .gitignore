@@ -1,8 +1,14 @@
-# User-generated content (created during the design process)
-docs/
+# User-generated content (created when this tool is run against a real
+# product, e.g. docs/01-discovery/, docs/06-prototype/,
+# docs/TODO-DESIGN-PACKAGE.md) — but docs/40-initiatives/ (ecosystem-wide
+# initiatives convention, incl. the _template/ scaffold) and
+# docs/01-architecture/ (this project's own architecture doc) are the
+# framework/project's own tracked content, not generated design output.
+docs/*
+!docs/40-initiatives/
+!docs/01-architecture/
 
 # Local Claude Code config (contains machine-specific paths)
-.mcp.json
 .claude/settings.local.json
 
 # Node
