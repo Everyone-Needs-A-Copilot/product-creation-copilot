@@ -3,7 +3,7 @@
   "pluginPath": "./plugins/codex-copilot",
   "projectName": "product-creation-copilot",
   "frameworkVersion": "0.6.1",
-  "frameworkCommit": "f581ef0",
+  "frameworkCommit": "325db12",
   "updatedAt": "2026-08-11",
   "updatedBy": "codex-copilot 0.6.1 update-project.sh"
 }

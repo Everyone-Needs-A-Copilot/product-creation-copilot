@@ -376,7 +376,7 @@
         {
           "path": "plugins/codex-copilot/skills/setup-project/SKILL.md",
           "ownership": "framework",
-          "checksum": "sha256:87d5f94f1883f381a398a4b762fd4456a22fd76122f398b043323a6ebf58de59"
+          "checksum": "sha256:2be9db2059e35fb8a095d8ff5195fca5126ee2bd53f6f64ecfd2fe001bfb2a1d"
         },
         {
           "path": "plugins/codex-copilot/skills/setup/SKILL.md",
@@ -426,7 +426,7 @@
         {
           "path": "plugins/codex-copilot/skills/uids/SKILL.md",
           "ownership": "framework",
-          "checksum": "sha256:422876bb6bfdec89cd6902f1b0cc1d8269b8a091f6292fe761e008d47fd42be0"
+          "checksum": "sha256:27a67b9f018223ac27db2973c1b53883a25f379a49a8b52d1c9a9f6b02b768c7"
         },
         {
           "path": "plugins/codex-copilot/skills/update-copilot/SKILL.md",
@@ -436,12 +436,12 @@
         {
           "path": "plugins/codex-copilot/skills/update-project/SKILL.md",
           "ownership": "framework",
-          "checksum": "sha256:1248d40a47fdb4425dfca97dc4209ed6094799d2115d62bc886be42c78e74839"
+          "checksum": "sha256:d475741967e6f2d5c08d9f58becbf7b4983c829090b99fc99b3a1d8d55d49509"
         },
         {
           "path": "plugins/codex-copilot/skills/uxd/SKILL.md",
           "ownership": "framework",
-          "checksum": "sha256:e63187df20274d4fcfa9f7348817c5d7173668cfcb912c00219501af51077422"
+          "checksum": "sha256:cde7fc6d854b9651f87aa4e223c252b9960fcbc54c0c72bb1972a709f6e05b77"
         },
         {
           "path": "scripts/copilot-gate.sh",
@@ -452,11 +452,13 @@
       "managed_outputs": [
         {
           "path": ".claude/skills/codex-copilot",
-          "kind": "internal-symlink"
+          "kind": "internal-symlink",
+          "fingerprint": "sha256:ef93018d64e04f341f5de74439db27416865444794b6b29a4660575d67964f84"
         },
         {
           "path": ".codex-copilot.json",
-          "kind": "merged-json"
+          "kind": "merged-json",
+          "fingerprint": "sha256:0a087702d37399ae32d167f57c4e4c32d00fa0b9b149d11d6f97846cae303412"
         }
       ]
     }
