@@ -36,8 +36,8 @@
 |---|----------|--------|-------|
 | 4 | `01-research/10-interviews/01-interview-self.md` | NOT STARTED | Self-interview (product owner interviews themselves as primary user) |
 | 5 | `02-service-design/30-jtbd.md` | NOT STARTED | Jobs to be done across all personas |
-| 6 | `02-service-design/20-journey-maps.md` | NOT STARTED | Personas, journey narrative, struggling moments, emotional arc |
-| 7 | `02-service-design/40-moments-that-matter.md` | NOT STARTED | Critical moments with success/failure criteria |
+| 6 | `02-service-design/20-journey-maps.md` | NOT STARTED | Primary stakeholder and trigger, progress statements, moments, struggling moments with stress 1-10 and forces, moments that matter (3 or 5), emotional arc |
+| 7 | `02-service-design/40-moments-that-matter.md` | NOT STARTED | The 3 or 5 highest-stress struggling moments with evidence, forces, why they matter, success/failure criteria |
 | 8 | `02-service-design/10-service-blueprint.md` | NOT STARTED | Optional for simple products — frontstage, backstage, support processes |
 
 ---
