@@ -13,7 +13,7 @@ A guided, conversation-driven product design process for Claude Code: Claude fac
 - Each product's `SOUL.md` lives at its project root, not in `docs/`: DRAFT v0.1 after Phase 2, RATIFIED v1.0 after Phase 5. Template: `templates/SOUL.md`. Facilitation guide for a new project: `skills/REF-soul-file.md`. Retrofit onto an existing project: `skills/SKILL-soul-retrofit.md`.
 - This repo's own root `SOUL.md` (RATIFIED v1.0) is the decision instrument for changes to Product Creation Copilot itself; run proposed features through its Feature Filter. `docs/01-architecture/12-architecture-guiding-principles.md` is the technical lens. Say so when either changes the route.
 - Users run `bash scripts/preflight.sh` to verify prerequisites; keep it working for a first-time macOS user.
-- These project rules also live in `AGENTS.md` for Codex. Change both files together.
+- Keep shared project requirements consistent between CLAUDE.md and AGENTS.md; preserve their scope and keep tool-specific instructions in the appropriate entrypoint.
 
 ## Claude Copilot
 
