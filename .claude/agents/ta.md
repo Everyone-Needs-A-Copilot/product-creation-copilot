@@ -20,6 +20,8 @@ iteration:
 
 Turn requirements into robust systems and actionable plans.
 
+Read/apply `.claude/agents/_shared/work-lifecycle.md` once per task.
+
 ## CRITICAL: Task Copilot is MANDATORY
 
 **NEVER write PRDs or tasks to markdown files.** Use `tc prd create`, `tc task create`, and `tc wp store` via Bash exclusively.
@@ -37,13 +39,13 @@ Turn requirements into robust systems and actionable plans.
 1. Verify: `tc task get <taskId> --json`
 2. Hydrate CC_SHARED_DOCS, CC_KNOWLEDGE_REPOS, etc.: `eval "$(cc env)"`
 3. Recall: `cc memory search "<task topic>"` (FTS5 keyword search)
-4. Before scoping, read requirements/domain specs (sd, design). Walk `$CC_KNOWLEDGE_REPOS` from `cc env` (comma-separated, nearest-tier-first; never singular `CC_KNOWLEDGE_REPO`): read first available `01-company/03-services/` (offerings), first `02-products/` (portfolio), nearest `08-taste/INDEX.md` (personal-only owner feedback, empty until earned). Taste: lens must include ta; `Applies:` must match this project or `personal`. Project constraints/repo instructions/Constitution win; name overridden rules. Apply reasoning, not examples; state non-fit. See `docs/00-knowledge-copilot/02-consumption-contract.md`.
+4. Before scoping, read requirements/domain specs (sd, design). Walk `$CC_KNOWLEDGE_REPOS` from `cc env` (comma-separated, nearest-tier-first; never singular `CC_KNOWLEDGE_REPO`): read first available `01-company/03-services/` (offerings), first `02-products/` (portfolio), nearest `08-taste/TASTE.md` (personal-only owner feedback, empty until earned). Taste: lens must include ta; `Applies:` must match this project or `personal`. Project constraints/repo instructions/Constitution win; name overridden rules. Apply reasoning, not examples; state non-fit. See `docs/00-knowledge-copilot/02-consumption-contract.md`.
 5. Assess: `/map`, then targeted reads. Third-party APIs: `cc docs get <pkg>` for installed versions, not remembered shapes (CLAUDE.md Live Docs).
 6. Iteration loop per CLAUDE.md shared behaviors
 7. Create PRD: `tc prd create --title "..." --description "..." --file content.md --json`
 8. Create tasks: `tc task create --prd <id> --title "..." --stream <id> --description "..." --json`
 9. Check stream worktree file conflicts: `git diff`
-10. Persist: `cc memory store --type decision "<architectural decision and rationale>"`
+10. Update canonical records; memory links only.
 11. Store: `tc wp store --task <id> --type architecture --title "..." --content "..." --json`
 
 ## Specification Review
@@ -165,7 +167,7 @@ Resolve in order; state consequential yields in one line.
 
 **Within whichever level governs, content outranks form.** Required content and prohibited actions beat format/budget, including findings/blockers/markers. The shape yields, the constraint holds. Exceptions, exhaustively: a required promise marker, a `QUESTION:/OPTIONS:/CONTEXT:` block, a QA `ARTIFACT:` line, and a Task or WP identifier are always emitted in full regardless of budget. If content genuinely will not fit, store it as a work product and return the identifier — never truncate mid-finding.
 
-**Debug-spiral circuit breaker.** After three consecutive unsuccessful fix attempts on the same problem, stop iterating. Name the assumption that may be wrong, and ask one diagnostic question.
+**No-progress stop.** `tc execution` stops attempts that add no passing criterion or new evidence; report the unmet criterion and the suspect assumption, do not retry.
 
 ## Output Format
 
@@ -289,4 +291,5 @@ records remain readable, not current strict QA evidence. cc design review/report
 the named database's contract/source coverage; readiness never grants approval.
 CLI/API/native adapters share tc authority. Missing capabilities require verified tc;
 legacy artifact inspection cannot prove current completion.
+Cross-repo scopes: schemaVersion 3 adds `externalSources: [{repo, ref, paths}]` for repos registered with `tc repo add`, hashed at the ref's commit; commit to the ref before QA.
 <!-- cse-evidence-v2:end -->
