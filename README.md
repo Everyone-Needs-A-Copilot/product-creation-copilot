@@ -181,20 +181,6 @@ Copy the exact error message and ask Claude: `I'm seeing this error: [paste erro
 
 ## License
 
-This project is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) (Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International).
-
-**You are free to:**
-- Use this framework for your own products and projects
-- Share it with others
-- Adapt and build on it
-
-**Under these terms:**
-- **Attribution** — Credit "Everyone Needs A Copilot" and link to this repository
-- **NonCommercial** — You may not use this framework to build commercial services, courses, or consulting offerings without permission
-- **ShareAlike** — If you build on this framework, share your additions under the same license
-
-**What counts as commercial use?** Selling a product you designed using this framework is fine — that's what it's for. Packaging this framework itself (or derivatives of it) as a paid service, course, template kit, or consulting methodology requires a commercial license.
-
-**Want a commercial license?** Open an issue or reach out to discuss.
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
 
 The philosophy, facilitation methodology, and AI-native design process in this project are original work by [Everyone Needs A Copilot](https://github.com/Everyone-Needs-A-Copilot).
