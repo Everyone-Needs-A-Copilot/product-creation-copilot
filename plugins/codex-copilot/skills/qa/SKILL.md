@@ -55,7 +55,7 @@ Return:
 
 Read `../specialist-agents/references/verification-policy.md` once per task before
 selecting checks. Apply its behavior/consumer lanes, first-divergent-state diagnosis,
-two-hypothesis checkpoint, execution caps and authorized test-migration contract.
+two-hypothesis checkpoint, execution caps and authorized test-migration contract. Check the task's tier first (`tc task tier <id> --check`): on a T1/T2 task verify only that a valid tc attestation exists (`tc task check-qa <id> --json`) and that the diff does not need a higher tier; do not build a per-criterion packet. `tc task qa-packet <id>` pre-fills the T3 packet's IDENTITY and each criterion's exact text.
 
 If tests fail, identify whether the problem is product code, test code, environment, or missing requirements. Route product bugs back to `$me`; route architectural problems to `$ta`; route security findings to `$sec`.
 
@@ -119,8 +119,12 @@ IDENTITY: <checkout/revision + dirty fingerprint; runtime/config/server/data>
 BASELINE: <before artifact and identity, or unavailable + reason>
 ARTIFACT: <accepted type>|<local artifact or failable command + exit/result>
 UNTESTED: <required cases not exercised, or none>
+LANE: <agreed lane command(s); elapsed vs cap>
+OUTSIDE LANE: <any check run outside the agreed lane + reason, or none>
 VERDICT: <supported QA verdict>
 ```
+
+Report every registered criterion ID in the packet; a missing ID is a gap, not a pass. For a contract that carries a lane, the `LANE:` line stays within its cap and each `OUTSIDE LANE:` entry names a reason.
 
 Artifact existence, playable media and build success do not establish behavioral
 correctness. A stale artifact, wrong test environment, failed criterion or untested
@@ -161,6 +165,7 @@ identity. Use the registered IDs in `CRITERION:` and exact expected behavior in
 completion service rechecks contract, task/database identity and content hashes,
 including dirty files, new files and deletions. It also enforces unfinished task
 dependencies. Do not downgrade requiresQa or replace source evidence with prose.
+Tier scope: the contract, identity and per-criterion packet above are the T3 path. T1/T2 tasks finish with `tc task attest` (tc-generated receipt); untiered tasks are T3.
 
 A v1 packet for pending work must be migrated with a registered contract and
 fresh verification. Historical completed records remain readable and explicitly
@@ -169,4 +174,21 @@ checks the named database's acceptance contract and source coverage; detector or
 report readiness still never grants task approval. CLI/API and native adapters
 share the same tc authority. Missing current capabilities require a verified tc
 installation; legacy artifact inspection is not a current completion proof.
+Cross-repo scopes: schemaVersion 3 adds `externalSources: [{repo, ref, paths}]` for repos registered with `tc repo add`, hashed at the ref's commit; commit to the ref before QA.
 <!-- cse-evidence-v2:end -->
+
+## Work Lifecycle
+
+Apply the [shared work lifecycle](../cleanup/references/work-lifecycle.md) once
+per task, including direct invocation of this skill: start/resume, maintain,
+pause/handoff, finish and later reuse. Keep the checkpoint proportional in the
+existing record; a small answer does not need a new task or document.
+
+For substantial QA-required work, include an observable `WORK-LIFECYCLE` (or
+equivalent) criterion before acceptance is frozen. QA inspects the maintained
+record, applicable lesson-to-decision/check evidence, recovery/retirement results
+and explicit holds, using the shared lifecycle's acceptance guidance. A missing
+checkpoint cannot pass on metadata or a bare approval. A verified, in-scope hold
+can satisfy delivery checkpoint evidence while cleanup remains pending; it does
+not establish a cleanup or product-quality success. Preserve frozen scope and
+cumulative history for existing work.

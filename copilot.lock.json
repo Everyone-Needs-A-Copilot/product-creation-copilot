@@ -4,7 +4,7 @@
       "component": "claude",
       "files": [
         {
-          "checksum": "sha256:a12d84848696e0db14005a9380c19110ad9afd3d7c1a53ae387a1c4e3c181d10",
+          "checksum": "sha256:1c9b9174d32be30c82acf0bcb4f9fcb12f3280e720f31b5c6e470522bee0515d",
           "ownership": "framework",
           "path": ".claude/commands/protocol.md"
         },
@@ -39,7 +39,7 @@
           "path": ".claude/commands/orchestrate.md"
         },
         {
-          "checksum": "sha256:b4aba6c7cc68273f9ec9805f4ce7cd5162da5636d09321620b57d367ae50e38b",
+          "checksum": "sha256:3e7d8127f62f26696cf27da02b023e933ffbc390b0ab0de1ef7b8132a5657ba2",
           "ownership": "framework",
           "path": ".claude/commands/reflect.md"
         },
@@ -54,7 +54,7 @@
           "path": ".claude/fitness-check.sh"
         },
         {
-          "checksum": "sha256:3933ed9d1f1f125ea3b46806c7ee5d3d470c0e70bbb8ad28eaedeb2657f33238",
+          "checksum": "sha256:a4ac940e23d7d863638b23b7c0ab03cd31afeaf27909f2e2a645add4edc982d6",
           "ownership": "framework",
           "path": ".claude/hooks/copilot-hook.sh"
         },
@@ -104,7 +104,7 @@
           "path": ".claude/agents/_shared/optional-context.md"
         },
         {
-          "checksum": "sha256:5015fa35900cac34303b90fd2b0a52e4155b7394aebe43ea8e1e13b0b7c0faf0",
+          "checksum": "sha256:9db7a7c396bf5e8e464e775c0d90a8e6df6685b42e78d27444ac48a3b5eb2547",
           "ownership": "framework",
           "path": ".claude/agents/_shared/output-contract.md"
         },
@@ -114,52 +114,52 @@
           "path": ".claude/agents/_shared/precedence.md"
         },
         {
-          "checksum": "sha256:a50f935f1b89328445f70e7ab4f2049e76e31c04d5413596a617e7fc6de9d608",
+          "checksum": "sha256:9155df1d4c5620407f7f784abbf680c99c92224e52e2f3a78e43e5d97941e1f3",
           "ownership": "framework",
           "path": ".claude/agents/_shared/verification-policy.md"
         },
         {
-          "checksum": "sha256:e2d632f8c0c224c0396b9b914f5dacf549142d146bd1c8c890324b1910b2e171",
+          "checksum": "sha256:093c3dd06f5527089c7634ce1189af10a90fd6d3b09f6518d1c1c09d2f302ea0",
           "ownership": "framework",
           "path": ".claude/agents/_shared/work-lifecycle.md"
         },
         {
-          "checksum": "sha256:4fb5616ae5a9b74ace60140e691e1f815306f3ac4cb8b96ae0fc6d6d941c4abd",
+          "checksum": "sha256:e07f0b7794e79f69476dcfc1ff1e6408034a97c3e926afb96935996dea4a030a",
           "ownership": "framework",
           "path": ".claude/agents/cco.md"
         },
         {
-          "checksum": "sha256:936e066ee64ae19bdf1240b26357a2a706e5795c620bce9265d50792f76c8ee2",
+          "checksum": "sha256:b576d9466360ad0a7cda663558089a0494738a86dcc13546f28fa3065ffb7fb0",
           "ownership": "framework",
           "path": ".claude/agents/cpa.md"
         },
         {
-          "checksum": "sha256:15e7f279eccd13714bc0aa91483527c3c95fa08fbf95b9242531d5ebe8099d3b",
+          "checksum": "sha256:a2ed9897b5efa26780c906b35192f2e2974b9cae9ed3b8a3a3e311fda07734f3",
           "ownership": "framework",
           "path": ".claude/agents/cs.md"
         },
         {
-          "checksum": "sha256:df11205e986f504c40edad8da7c3c1719355d2fa21ed6c7ec71425a52a96685a",
+          "checksum": "sha256:be8def7ac3d70bcdb0df7af3d14abcbbb6d992d177333904532e1fbd514c47f7",
           "ownership": "framework",
           "path": ".claude/agents/cw.md"
         },
         {
-          "checksum": "sha256:5b61c835d13fa7f2bd696ff0231d682810698443ba0013c84f5ee35c56f58713",
+          "checksum": "sha256:7eebf8d305fe5ab211d5e04dbf9a72f214c086e789fde11f49b3bcf688e8d5d7",
           "ownership": "framework",
           "path": ".claude/agents/do.md"
         },
         {
-          "checksum": "sha256:b93cb8dec50a203dba2eddc6bd5b6ea4792f99f5328915ab262c9d4f6238bfc8",
+          "checksum": "sha256:47c4a8ce3eae5a9db191d8504bf71c9c1f77614f2a937566e9bfd0e5c4801d97",
           "ownership": "framework",
           "path": ".claude/agents/doc.md"
         },
         {
-          "checksum": "sha256:41fb474045bcbd653df49131363ff78d450d5fc53a7de0f36d19de0fb0ee77a6",
+          "checksum": "sha256:869b61ab53f1f43b9fab23c87c60a3cd4bff48126c4bf8d89707364cd405e9db",
           "ownership": "framework",
           "path": ".claude/agents/ind.md"
         },
         {
-          "checksum": "sha256:7ceec89ba5d576cea41d2ced605a3fcfadca201a8c8cd8e71fef04373bca20eb",
+          "checksum": "sha256:77ef3902f70d6fe4835f8e1ddd0a1afd28751ade0a43f7bc95bc2fbc00b1617b",
           "ownership": "framework",
           "path": ".claude/agents/kc.md"
         },
@@ -174,42 +174,42 @@
           "path": ".claude/agents/manifest.schema.json"
         },
         {
-          "checksum": "sha256:1911e92b0ec5fc4608f7dd75f3f470ab1929de8dfc0a06585a31858b9dd11ab9",
+          "checksum": "sha256:9f660482cf8b48b8590d16ca9e36e689f9e670ec1487c0ab825a7d8fe0e142e1",
           "ownership": "framework",
           "path": ".claude/agents/me.md"
         },
         {
-          "checksum": "sha256:d09017e7816973067a26713bfaad1d5fd63147c1d923106715422b55e9e960b0",
+          "checksum": "sha256:d57a3fd38a1e419df2572e5a0039146a1d2b7b3180d0e2dfe3491e45c8961dd3",
           "ownership": "framework",
           "path": ".claude/agents/qa.md"
         },
         {
-          "checksum": "sha256:b3601b95ee810f18e592d0f484da8fc77490d732107659cbabd16894a6882eb5",
+          "checksum": "sha256:6b5b0181c7dc10418708304374445159eac924caf2685f01e6392ce899d1af47",
           "ownership": "framework",
           "path": ".claude/agents/sd.md"
         },
         {
-          "checksum": "sha256:af1491a8d69b3527dc340f85ba01743072f2e4f4faeed18d9c28bcaa5be85cdf",
+          "checksum": "sha256:1b9832190c29e79f78a39fac354c3c19c150358977a6149128ac636b36ac28b9",
           "ownership": "framework",
           "path": ".claude/agents/sec.md"
         },
         {
-          "checksum": "sha256:67cc2d4e5700e2a49da84f6ad55fc67f828e554b82b97a428cf118c2ced36ed2",
+          "checksum": "sha256:d5d70f89a47f78a3d6b493071605cfbf93fb09a2d09e143512b90aa1f8c0103b",
           "ownership": "framework",
           "path": ".claude/agents/ta.md"
         },
         {
-          "checksum": "sha256:dfd3531440e5e84996302c7d07d7ce8f058e6f4ac568ea0c035e1e0a462e409b",
+          "checksum": "sha256:67967407baea4d0ae15f1b2fb35d8568b997a65d6bfe6f227a86e5885d032dd3",
           "ownership": "framework",
           "path": ".claude/agents/uid.md"
         },
         {
-          "checksum": "sha256:f35b415c44905312994f2b35e142c817f094185535746ea3bccc178fedfd1f48",
+          "checksum": "sha256:f1fe32585c0eb75092f9e092d266c73066bdcd1429e413c11c2a566d7cb6a56b",
           "ownership": "framework",
           "path": ".claude/agents/uids.md"
         },
         {
-          "checksum": "sha256:ca57694886004d5f16979ea893527188a126edcc0407290ee24cecca35767064",
+          "checksum": "sha256:6176a70677316552588acc520298f9aebe0daece9e1184dcde32f3fa857755d0",
           "ownership": "framework",
           "path": ".claude/agents/uxd.md"
         },
@@ -227,19 +227,19 @@
         }
       ],
       "ownership_mode": "full",
-      "release_tag": "v5.26.0",
-      "version": "5.26.0"
+      "release_tag": "v5.33.1",
+      "version": "5.33.1"
     },
     {
       "component": "codex",
       "files": [
         {
-          "checksum": "sha256:f3b00fc7f5d11b5790b8aa71fff8b5b0969e3816d7c0a6b77843a9ced89d907b",
+          "checksum": "sha256:b1e53e1a68df2dc5b0d2cbc06b2cbd74b06c9be0104cd881c9a7e47a2a3749fc",
           "ownership": "framework",
           "path": "plugins/codex-copilot/.codex-plugin/plugin.json"
         },
         {
-          "checksum": "sha256:acce8fd48485e70eb9b6b7b4e5756cd482afc3b69902d9db7321387adb1643c9",
+          "checksum": "sha256:d147953200dca9fca3f81cbf438abe016e2693ea25a7035ffee2e23b89c0d5ce",
           "ownership": "framework",
           "path": "plugins/codex-copilot/agent-catalog.json"
         },
@@ -364,42 +364,42 @@
           "path": "plugins/codex-copilot/hooks/user-prompt-protocol.sh"
         },
         {
-          "checksum": "sha256:07015d25e5a7c1fc7c8171f361ac06cda80774adb50340ea48ce79c7d6bec94a",
+          "checksum": "sha256:11b558e378531bbc875cf910863e6bc5f79d5f84ec067a9d53df16730bb04cf4",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/config/SKILL.md"
         },
         {
-          "checksum": "sha256:d2e314e29d46c5ecbcb45a2aaa57875e4ac0231b7024f8cd8c43900d22b9246b",
+          "checksum": "sha256:8d5244a4171e2600e744c616b7f7e7bdfd369de1c7d25712e0f7a4120e3f4192",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/continue/SKILL.md"
         },
         {
-          "checksum": "sha256:3736173e46c4ad0fe87ddee006df4f9434a54c0ddbca816b253f892c9bc1e751",
+          "checksum": "sha256:020d6580d2e0300a95e639076a1a717cbd2123f06e29778400bff74457348b83",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/do/SKILL.md"
         },
         {
-          "checksum": "sha256:8a88c4a1a8b020cbaf2fca7a35f0ce5b7f258634a0fe924f407be9db1280f95b",
+          "checksum": "sha256:63c73c21899b0846275a1c6400ebb417e7a81a3df782f6fb9c498e9abd02dc86",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/doc/SKILL.md"
         },
         {
-          "checksum": "sha256:1948fc2cfdd721f5f73fcae73a615b82d1fd6c8e81524325d3bd92b2a0e3db7c",
+          "checksum": "sha256:e4b501e2d726bcdba4bf344163809040f6ac720711da12b4b868c1ef6dfc26a7",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/extensions/SKILL.md"
         },
         {
-          "checksum": "sha256:594c37da56ac34e54e1209e928d4c6e19cc986ac289dee93076cba78b2143e6d",
+          "checksum": "sha256:67dc3972f3fbf8ee4658af37172fbb6c7880b4b823e11c179ccb0105b2db8da3",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/ind/SKILL.md"
         },
         {
-          "checksum": "sha256:4bb754bd6c5d5b39806263141827bc930720cc6a24c71dd499bb0f0f4a7e7d07",
+          "checksum": "sha256:6c56570b8a1f92d072777f51abaeb1fb9c152e6f1abfb66bf4d1af832812c79d",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/knowledge-copilot/SKILL.md"
         },
         {
-          "checksum": "sha256:761e133a742bfb2e3daa291f5bd1a668fe4bfb35cff6a3a38ae73b2606944bb2",
+          "checksum": "sha256:6724a146f71c171ae6b99df6c6f11973b944c74d10ec2130388a27a21bfcddb3",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/launcher/SKILL.md"
         },
@@ -409,32 +409,32 @@
           "path": "plugins/codex-copilot/skills/launcher/references/workflows.md"
         },
         {
-          "checksum": "sha256:183f94338e9b6c0725e87289c88fcb24bda8f24ee59d7faaf43af9191e49d72c",
+          "checksum": "sha256:7572cd63f726987ff8ae95e455d395154b6846f5e75c20279176f53615f50995",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/map/SKILL.md"
         },
         {
-          "checksum": "sha256:47d9ac767599939dde9b504beee2232b8ef9b92fd833981c330bf17afa70d4b6",
+          "checksum": "sha256:3af996764fa2802528c0103774075eb0c5d613fde12bb517f116f53ff8e1fd41",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/me/SKILL.md"
         },
         {
-          "checksum": "sha256:abc69aa4700a063ad7c5078bf7f861152b5aa1533febd6c100473adc2da27749",
+          "checksum": "sha256:b2f968b3de357a114a6312ed8e88ca953ed4ad4eed4d05fad180108eeb8dcfcb",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/memory/SKILL.md"
         },
         {
-          "checksum": "sha256:8c26c9ae6408fcc111121bd2d2219afad91589d9867a73172f5dab0626a080c4",
+          "checksum": "sha256:03eada0de3066e8602b43d439718a440970451625cd26f33cdeea123f50392e8",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/orchestrate/SKILL.md"
         },
         {
-          "checksum": "sha256:bc89d27efc032691e4f3090c7856a72a5c4ad0a72671d780dcbc74337d72f779",
+          "checksum": "sha256:d19442dc040cd68fac9e639465887858dee5ddb0ad1c7004e169aab59aa44743",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/pause/SKILL.md"
         },
         {
-          "checksum": "sha256:e085dd327f23e3d291d01609e9b7e1c5759ad2962335cde0eb8b0499d707b03d",
+          "checksum": "sha256:ae5d09dd3cf46e9aeb68a3bbe2f7e790b7ac1c55c876e874ada4ee2811e28231",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/protocol-router/SKILL.md"
         },
@@ -444,12 +444,12 @@
           "path": "plugins/codex-copilot/skills/protocol-router/references/routing-matrix.md"
         },
         {
-          "checksum": "sha256:075c88b2ba8dba6134272f21066853c7ebd809b3e5bc38200f0cf4747f961f6f",
+          "checksum": "sha256:fd5c00f1fb28c80d655253f3de41e915fc29debce7e320c779d7bf93340a84f4",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/protocol/SKILL.md"
         },
         {
-          "checksum": "sha256:a87771929f2fa68ed236029a0e4be17b6bef17be5bf5181e9e4e75ac393d4c70",
+          "checksum": "sha256:c2f61f67fc3a26850af491bd84eed982bbd1b39a0465aa70638660ed147afdd6",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/protocol/references/checkpoints.md"
         },
@@ -464,52 +464,52 @@
           "path": "plugins/codex-copilot/skills/protocol/references/generated-workflows.md"
         },
         {
-          "checksum": "sha256:8b2b9fbf6952323a2283e89b41d18785ab147f6a1e59e52276c90cb2a87b3509",
+          "checksum": "sha256:9107a89cfe0db153dc8b77e4f6ea6a41329f115d77581cf0a8919f7b18ac9a7c",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/qa/SKILL.md"
         },
         {
-          "checksum": "sha256:fc7f3cba82d18497709822e3681a10b011663e338644173b1e006e5c543463de",
+          "checksum": "sha256:f551da0a0a7b37fa9b0be3d4f001a2cd1ea7a1b437bb5419ce1be2e85495aa57",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/reflect/SKILL.md"
         },
         {
-          "checksum": "sha256:c9b5f5c56f2ba551e06844b4514da339c08d2ed4a0fceee096f71087f539e34e",
+          "checksum": "sha256:e2c40468d6dea604e23776cf507df2c1aa9681f29564f976fa48339742bec309",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/sd/SKILL.md"
         },
         {
-          "checksum": "sha256:d65436626532358456c511ced92f1737f2ddbd56a72514916f70035a7eb44187",
+          "checksum": "sha256:e922532294d791a517861e5d884fda6f5061f74d33043f3353198afc65061df6",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/sec/SKILL.md"
         },
         {
-          "checksum": "sha256:4d1149fab85148223399f70125b0eba962c011b4f3fabed01ee9fdd6ecffbbcf",
+          "checksum": "sha256:87e812a8bcf31c9e2cd8b4894d45f54cff2267a9d13b96861bb70bd43c06de61",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/setup-copilot/SKILL.md"
         },
         {
-          "checksum": "sha256:c8c6f9e16805404375592594c55f35b7ff845a60da96217b0b89430fcd766265",
+          "checksum": "sha256:396cb6786320ba4ea144cc6b1f43c6d593f24d6df052b3c6d87feb76a09ca7a4",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/setup-knowledge-sync/SKILL.md"
         },
         {
-          "checksum": "sha256:87d5f94f1883f381a398a4b762fd4456a22fd76122f398b043323a6ebf58de59",
+          "checksum": "sha256:8dfd6b32858874c3ce60d49f7a333d6d430155ecab37c87ab5de0d6ba44fc6b8",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/setup-project/SKILL.md"
         },
         {
-          "checksum": "sha256:a8f6dd90f72f5f22fe2037d1ba4e29bb279598334a1c1f52baf0e519bf05415d",
+          "checksum": "sha256:e3b2f16f6fee123bcd25ae22a96721ea402b2bb4fa7196f12d05fd2f3d38f1f9",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/setup/SKILL.md"
         },
         {
-          "checksum": "sha256:392f9c00b743643c93770d2c8a2d62340d19527a230bfa52d1fa1fbc2357ddc2",
+          "checksum": "sha256:ab75ac25c7723014e67f85c2efc40c823d61a00b570d81303e2e0d7fe333a2dd",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/skills-approve/SKILL.md"
         },
         {
-          "checksum": "sha256:919baf5fdbbc5bc253ba05e82f64553df7b5603fbfe8bfa93b1c4f64e179e4d2",
+          "checksum": "sha256:deb0244241509b9f3d614f49b59341ed1638e18f7f056ab382f4559af948b436",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/specialist-agents/SKILL.md"
         },
@@ -519,22 +519,22 @@
           "path": "plugins/codex-copilot/skills/specialist-agents/references/agent-playbooks.md"
         },
         {
-          "checksum": "sha256:98644194c7c5e6a1868a7164fcd0ddf7671fe78ac8e5180e2ef6f7e1f9d83adb",
+          "checksum": "sha256:9a581040cf4bc951896c4d87584a6b218e7041dc97b7e7a63c8041bb48bb6d02",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/specialist-agents/references/shared-behaviors.md"
         },
         {
-          "checksum": "sha256:d403eb763b32997e966f4a531b01345f1c24789295023c1da31bbdac8cc9306d",
+          "checksum": "sha256:9155df1d4c5620407f7f784abbf680c99c92224e52e2f3a78e43e5d97941e1f3",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/specialist-agents/references/verification-policy.md"
         },
         {
-          "checksum": "sha256:04b54c9248dc0e5bcc1490972b8529b55868713a2908e22444f8cdd195b12042",
+          "checksum": "sha256:18f49778492397419c2d731d82b24e187cae1dde3876f9e86688c9b9fb1ed7b5",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/ta/SKILL.md"
         },
         {
-          "checksum": "sha256:3e3759cdd68845b18c48872a754d6a5e51183b1a2acc21cd670a2d3380ac1eb6",
+          "checksum": "sha256:5835ad08c1c1c96f148ba7a09d962d80ddc0a0c42046bb3be8f49151d9a04c9f",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/task-copilot/SKILL.md"
         },
@@ -544,27 +544,27 @@
           "path": "plugins/codex-copilot/skills/task-copilot/references/work-product-types.md"
         },
         {
-          "checksum": "sha256:7ca7b98ea89f7b1c12ead5191e26870be9932a79cf41243a8330707a0191100c",
+          "checksum": "sha256:61be91b2829ace271db1958fd4ba1f1ca373a45eaa2e03ac3b7c2bbba0af4e1e",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/uid/SKILL.md"
         },
         {
-          "checksum": "sha256:1b971cbf811979c51922a9073672ee558a085638230f4658c8e919c7b7026ebe",
+          "checksum": "sha256:334ff168110c91782138f9a8b61f5d7c89e51f3d432203df6b06c45bb71dbaf2",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/uids/SKILL.md"
         },
         {
-          "checksum": "sha256:54c083f6cf61a4a7ee3ee2e961611b300c37d8811d5db0c9c15bc11c6e198a9f",
+          "checksum": "sha256:4fb04b19eaaedccd1cfabdd387ba04d9f76b23f80b7708ef0353f02429afe7e4",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/update-copilot/SKILL.md"
         },
         {
-          "checksum": "sha256:ab7c4f4f47da3d2df34406c6814603346b0dfd45e4f82f5bc70abc568c4ff585",
+          "checksum": "sha256:237c61d5c835b9384102dfb0a7a41f7b45331d2c19d07ee588ce243e513c98f7",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/update-project/SKILL.md"
         },
         {
-          "checksum": "sha256:5ce412d8096725c47f26ea052288870667f268b606699467df0b694d40971ba2",
+          "checksum": "sha256:34de2cd98133dbd2e961b45b154e2dea9411483657bbba5b0caaca151ac4b326",
           "ownership": "framework",
           "path": "plugins/codex-copilot/skills/uxd/SKILL.md"
         },
@@ -593,8 +593,8 @@
         "signer": "SHA256:FIfppOkzwXZUAamELQzYoSUQXiEAmTYiVewHe1ACMZo",
         "tree": "5c784032e0a295edbf50c1096ebc5a6cb6c1de12"
       },
-      "release_tag": "v0.8.0",
-      "version": "0.8.0"
+      "release_tag": "v0.15.0",
+      "version": "0.15.0"
     }
   ],
   "mutations": [

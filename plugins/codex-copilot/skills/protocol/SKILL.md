@@ -51,13 +51,14 @@ Keep these instruments separate:
 
 ## Required behavior
 
+0. set the verification tier first, using the Verification Tiers table in `../specialist-agents/references/verification-policy.md` (T1 copy, T2 structural, T3 foundational; `tc task tier <id> T1|T2|T3 --reason "<text>"`; from the diff, upward only, owner-only downgrades, untiered is T3); T1 is not substantial work and skips the done block, T2 and T3 add a sixth `Tier:` line. Before substantial work, post the five-line done block (Done means / Proven by / Not in scope / Assumptions / First example) and wait for one word; register it with `tc task contract <id> --from-done-block <file>` (see `references/checkpoints.md`)
 1. check repository decision instruments when they apply
 2. classify the task
 3. state the workflow
 4. ensure `tc` context exists for substantial work
 5. load known references and memory when `cc` is configured
 6. for third-party API work, require Live Docs before planning or implementation
-7. record QA-required implementation tasks with `metadata.requiresQa=true`
+7. record QA-required implementation tasks with `metadata.requiresQa=true`; `$qa` is required for T3 and escalations, T1/T2 finish with `tc task attest`
 8. use `docs/40-initiatives/NN-slug/` for formal multi-phase initiative knowledge while keeping live execution state in `tc`
 9. perform the next appropriate specialist step
 10. do not jump straight to implementation when earlier specialist work is warranted
@@ -70,7 +71,7 @@ For experience work that does not materially change screens, components, or inte
 Before implementation, state the deliverable, required acceptance criteria,
 affected consumers, verification lane/cap and exclusions in `tc`. Freeze this
 batch scope; use the engineering/QA Proportional Verification fixed finish line.
-After current source-bound QA approval satisfies every required criterion, close
+After current source-bound QA approval (T3) or a valid tc attestation (T1/T2) satisfies every required criterion, close
 the task, report completion and separately pending work, then stop. Unrelated
 findings do not authorize another improvement cycle. Missing required evidence or
 an exhausted cap remains incomplete; never weaken acceptance to declare completion.
@@ -80,7 +81,9 @@ an exhausted cap remains incomplete; never weaken acceptance to declare completi
 - Lead with what is now true—the answer, decision, result, or blocker—not what was investigated.
 - Include only what the user needs to trust the result, decide, or act. Preserve required findings, uncertainty, citations, QA evidence, safety warnings, blockers, and next actions.
 - Default to at most 6 sentences or 5 bullets; exceed that only when requested or required by risk, complexity, or completeness.
-- Keep progress updates to one sentence: material result plus next active step. Lead completion reports with the outcome, then give only changed scope, verification, and any remaining caveat or action.
+- Keep progress updates to one sentence: material result plus next active step.
+- Completion reports have four lines: Works (with evidence), Unverified, Parked (task IDs), Decision needed (or “none”). No confidence percentages.
+- Decisions lead with a recommendation; take it and report when every option is reversible within current authorization, and offer options only when a choice is irreversible, outward or budget-affecting.
 - Omit preambles, generic closers, self-narration, repeated findings, evidence inventories, command traces, and chronology unless requested or necessary.
 - Store detailed analysis and evidence in `tc` work products. Content outranks form; length never removes a required fact, artifact, verdict, identifier, or blocker.
 
@@ -92,11 +95,11 @@ An unknown that would change the work escalates rather than being noted:
 
 ```
 QUESTION: [the one thing that changes the answer]
-OPTIONS: [A — consequence] | [B — consequence]
+RECOMMENDATION: [what you would do, and why]
 CONTEXT: [why this cannot be resolved from what you were given]
 ```
 
-One question, not a checklist. Each option carries its consequence so the user can decide in one pass. `CONTEXT:` states what you already ruled out — that is what makes it a question rather than a request to be told what to do.
+One question, not a checklist. State the recommendation first; if every option is reversible within current authorization, take it and report instead of asking. Options appear only for irreversible, outward or budget-affecting choices, each with its consequence. `CONTEXT:` states what you already ruled out — that is what makes it a question rather than a request to be told what to do.
 
 **Resolving a genuine ambiguity silently is a defect, not efficiency.** Measured on an identical brief carrying a real contradiction ("Level 4 finish throughout" against "Garage included"): the arm with no framework asked, got the answer, and priced 25 fewer labour hours. The arm running the full design chain asked nothing and priced a guess. Inferring an answer where the brief is undecided converts the user's decision into your hidden assumption and buries it in a deliverable, where it resurfaces as rework. Guessing is acceptable only when the guess is stated as one.
 
@@ -113,7 +116,9 @@ Checkpoint stages:
 - after `uids`
 - after `ta` when the plan materially shapes implementation
 
-Each checkpoint follows `references/checkpoints.md`: outcome first, only real decision-specific options, and no evidence inventory. Include soul, architecture, QA, or next-step context only when it changes the decision.
+Design-flow checkpoints (`sd`, `uxd`, `uids`, and PRD or design approval) require explicit user approval: there is no auto-proceed. Everywhere else, when there is no real decision, state the outcome and proceed.
+
+Each checkpoint follows `references/checkpoints.md`: outcome first, recommendation first, options only for irreversible, outward or budget-affecting choices, and no evidence inventory. Include soul, architecture, QA, or next-step context only when it changes the decision.
 
 ## Main-session pattern
 
@@ -176,6 +181,7 @@ identity. Use the registered IDs in `CRITERION:` and exact expected behavior in
 completion service rechecks contract, task/database identity and content hashes,
 including dirty files, new files and deletions. It also enforces unfinished task
 dependencies. Do not downgrade requiresQa or replace source evidence with prose.
+Tier scope: the contract, identity and per-criterion packet above are the T3 path. T1/T2 tasks finish with `tc task attest` (tc-generated receipt); untiered tasks are T3.
 
 A v1 packet for pending work must be migrated with a registered contract and
 fresh verification. Historical completed records remain readable and explicitly
@@ -184,4 +190,23 @@ checks the named database's acceptance contract and source coverage; detector or
 report readiness still never grants task approval. CLI/API and native adapters
 share the same tc authority. Missing current capabilities require a verified tc
 installation; legacy artifact inspection is not a current completion proof.
+Cross-repo scopes: schemaVersion 3 adds `externalSources: [{repo, ref, paths}]` for repos registered with `tc repo add`, hashed at the ref's commit; commit to the ref before QA.
 <!-- cse-evidence-v2:end -->
+
+## Work Lifecycle
+
+Apply the [shared work lifecycle](../cleanup/references/work-lifecycle.md) once
+per task, including direct invocation of this skill: start/resume, maintain,
+pause/handoff, finish and later reuse. Keep the checkpoint proportional in the
+existing record; a small answer does not need a new task or document.
+
+At start/resume (including a new PRD or initiative) and finish/merge/pause/handoff, proactively inspect relevant worktrees and surface eligible cleanup with exact paths, recovery and dependency checks, then visibly request deletion approval; do not wait for a cleanup command. Merge alone is insufficient. Record owned holds and pending approval in the existing task, continue unrelated work, and reuse unchanged prior approval after drift checks.
+
+For substantial QA-required work, include an observable `WORK-LIFECYCLE` (or
+equivalent) criterion before acceptance is frozen. QA inspects the maintained
+record, applicable lesson-to-decision/check evidence, recovery/retirement results
+and explicit holds, using the shared lifecycle's acceptance guidance. A missing
+checkpoint cannot pass on metadata or a bare approval. A verified, in-scope hold
+can satisfy delivery checkpoint evidence while cleanup remains pending; it does
+not establish a cleanup or product-quality success. Preserve frozen scope and
+cumulative history for existing work.

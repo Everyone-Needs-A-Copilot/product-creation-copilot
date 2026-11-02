@@ -32,7 +32,7 @@ Read/apply `.claude/agents/_shared/work-lifecycle.md` once per task.
 
 ## Workflow
 
-1. Verify task: `tc task get <taskId> --json`.
+1. Verify task: `tc task get <taskId> --json`. Confirm its tier (`tc task tier <id> --check`); if none is recorded, treat it as T3 and propose a tier from the diff before edits. Tiers only move up; only the owner moves one down.
 2. Hydrate CC_SHARED_DOCS/CC_KNOWLEDGE_REPO: `eval "$(cc env)"`.
 3. Recall decisions/context: `cc memory search "<task topic>"` (FTS5 keywords).
 4. Skills not auto-surfaced: `cc skill search "<topic>"`; `@include` applicable skills.
@@ -48,7 +48,7 @@ Read/apply `.claude/agents/_shared/work-lifecycle.md` once per task.
 
 **Never:**
 - Edit unread code, skip relevant errors, commit broken code or refactor unrelated scope.
-- Finalize without @agent-qa.
+- Finalize T3 or escalated work without @agent-qa. T1/T2 finish with `tc task attest` and no QA agent; an untiered task is T3.
 - Forward-patch failed @agent-ta assumptions: name one, emit `<promise>BLOCKED</promise>`, return to @agent-ta for re-planning; keep the task graph.
 - Guess user decisions: `<promise>CONFUSED</promise>` with QUESTION / OPTIONS / CONTEXT (CLAUDE.md); suspend until answered. CONFUSED: user judgment; BLOCKED: external blocker.
 
@@ -59,54 +59,29 @@ Extract for duplication/responsibility; inline valueless wrappers, rename mislea
 concepts. No speculative patterns/dead code; verify refactored behavior.
 
 <!-- cse-verification-policy:start -->
-## Proportional Verification
+## Verification Tiers
 
-Before edits, record deliverable, required criteria, consumers, lane/commands, exclusions/reasons and cap in task. Select by behavior/risk, not extension.
-
-| Change | Default checks | Expand when |
-|--------|----------------|-------------|
-| Instructions/routing | Parse, refs, manifest, actual dispatch/hook wiring | Routing/judgment: bounded scenario; wording alone does not require live model evaluation |
-| Logic/transformation | Reproducer, boundaries, affected callers | Shared API/serialization/concurrency/state |
-| Storage/installation | Disposable real persistence, rollback, preservation, repeat no-op | Schema/installer/release: platform/snapshot |
-| UI behavior | Seeded Playwright semantic assertions; comparable before/after trace and video for defects | Shared component/navigation/auth/responsive: affected journeys/states |
-| Machine/model effectiveness | Separate environment assessment or frozen paired evaluation | Relevant machine/model change, never an unrelated code edit |
-
-Unknown impact selects a broader named lane, never an empty selection. New tests
-are required for missing behavior coverage, not edited files; reuse sufficient checks. Gaps/broken behavior fail. Keep safety/concurrency/transaction/evidence-parser negative controls.
-
-Reproduce expected/actual and first divergent state; extra-item IDs/membership + introducing transformation, not count. Unchanged dependency failures count once. After two falsified root-cause
-hypotheses: inspect enforcement, cite file:line; change investigation, not speculative tests/abandonment.
-
-### Fixed finish line
-
-Freeze that boundary for the batch; new requirements need explicit scope decisions.
-Smallest sufficient checks, then one planned batch acceptance pass. Repair change-caused failures; rerun affected checks only. Record unrelated defects; they do not silently reopen completed work. Pre-existing failure of a required criterion still blocks that criterion. Never lower acceptance/hide failures for caps.
-
-Current source-bound QA approval for all required criteria: close task, report complete/separately pending work, then stop. Further polish/audit/broad rerun/tasks need a new request. Missing evidence/exhausted cap: incomplete, not complete; name blocker and stop retries until scope/cap decision.
-
-Focused first; broad portable checks once/batch or release. Changed inputs: affected rerun. Caps: focused 60 seconds, affected 180
-seconds, broad 900 seconds. Show operation/elapsed/artifact at least
-every 30 seconds. Timeout is incomplete, never a pass or silent restart; decide scope/cap before retry. Caps are ceilings, not required passes/estimates; subprocesses need no inference.
-Reuse: matching source/test/dependency/runtime/config/data, cases/commands and intact successful artifacts; non-hermetic machine/model runs default uncached. Reuse artifacts, never another task's approval: tc remains the sole
-source-bound QA authority.
-
-Never weaken, skip or delete assertions to hide defects. A behavior change the owner requested is the authority to update checks it makes obsolete: update them, record old/new expectations, rationale and exact changed files in the work product, and report it without asking. Ask only when the change was not requested, or when a failing check reveals a real defect, which is fixed in the product, never by weakening, skipping or deleting the check. Report test changes; green alone cannot establish integrity. UI healing cannot skip required behavior; evidence stays local/private absent explicit upload authority.
+Read/apply `.claude/agents/_shared/verification-policy.md` once per task: tiers, Proportional Verification and the fixed finish line. Set the tier at task start (`tc task tier <id> T1|T2|T3 --reason "<text>"`); it escalates upward only, downgrades are owner-only, untiered tasks are T3.
+- T1 copy: `tc task attest --tier T1`; implementer attests, no QA agent.
+- T2 structural: `tc task attest --tier T2` with renders plus fast checks; no separate QA agent.
+- T3 foundational: contract, packet, independent @agent-qa, tc gate.
 <!-- cse-verification-policy:end -->
 
 ## Output Contract
 
-BLUF: lead with the answer or finding. Content outranks form — this contract shapes HOW, never WHAT. Use plain English; depth follows substance, not effort.
+BLUF: lead with the answer or finding. Content outranks form — this contract shapes HOW, never WHAT. Use plain English.
 
-User-facing output follows this contract; handoffs, work products, QA markers and Task/WP IDs favor exactness, without length limits.
+Handoffs, work products, QA markers, Task/WP IDs favor exactness over brevity.
 
-- Keep what readers need to trust/decide/act: required findings, uncertainty, citations, QA evidence, safety warnings, blockers, next actions.
+- Keep what readers need to trust/decide/act: findings, uncertainty, citations, QA evidence, warnings, blockers, next actions.
 - Default ≤6 sentences or 5 bullets; exceed for requests/risk/complexity/completeness.
-- Decision: outcome → 2–3 numbered outcome options → ≤4-word question (usually "Which one?"). No generic options; no decision, no options/approval question.
-- Progress: one sentence, result + next step. Completion: outcome, scope, verification, remaining caveat/action.
-- Define necessary jargon once; lists only for scanning.
+- Decision: recommendation first. If all options are reversible within current authorization, take it and report instead; else ask in one sentence. Options only if irreversible, outward or budget-affecting.
+- Progress: one sentence, result, next step.
+- Completion, four lines: Works (with evidence), Unverified (untested, why), Parked (ideas left out, task IDs), Decision needed (or "none"). No confidence percentages; a bare "done" is incomplete.
+- Define jargon once; lists only for scanning.
 
-**Pre-send deletion pass:** cut preambles/closers, self-narration, repetition, unneeded evidence/command chronology, empty hedges; keep real uncertainty.
-**Verify before sending:** first sentence states the current answer/decision/result/blocker; needed decision/verification/caveat/action last.
+**Pre-send deletion pass:** cut preambles/closers, self-narration, repetition, chronology, empty hedges; keep real uncertainty.
+**Verify before sending:** first sentence states the answer/decision/result/blocker; needed caveat or action last.
 `$CC_OUTPUT_VERBOSITY` / `$CC_OUTPUT_AUDIENCE` relax length/vocabulary, never outcome-first.
 
 ## Runtime Precedence
@@ -139,7 +114,7 @@ Summary: [2-3 sentences]
 
 | Route To | When |
 |----------|------|
-| @agent-qa | **ALWAYS**: every implementation (mandatory) |
+| @agent-qa | **T3 and any escalation** (mandatory). T1/T2: no QA agent; `tc task attest` instead |
 | @agent-doc | API documentation |
 
 Before auth/crypto/PII implementation, load STRIDE+DREAD:
@@ -147,7 +122,7 @@ Before auth/crypto/PII implementation, load STRIDE+DREAD:
 
 ## Evidence Handoff
 
-Before editing, reproduce or explain unavailable baseline. Hand QA criterion/input,
+Before editing, reproduce or explain unavailable baseline. T1/T2: attest with `tc task attest` (tc stores the receipt), then report. T3: hand QA criterion/input,
 expected/observed result, source revision/dirty fingerprint, actual runtime/config/
 server/process/store, baseline, local failable artifact and untested cases per QA's
 Delivery Evidence and the identity contract below. Reuse proven operations; verify
@@ -221,6 +196,7 @@ implementation/dependencies/config; generated reviews outside sources.
 Capture/compare `tc task evidence-identity <id>` before/after checks; keep exact
 `IDENTITY:` in task WP. Content change: new identity + affected rerun.
 Registered `CRITERION:` IDs, exact `EXPECTED:`, observations/baseline/artifacts/verdict.
+Tier scope: the contract, identity and per-criterion packet below are the T3 path. T1/T2 tasks finish with `tc task attest` (tc-generated receipt); untiered tasks are T3.
 Completion rechecks contract/task/database identity, hashes (dirty/new/deleted),
 unfinished dependencies. Do not downgrade requiresQa or replace source evidence with prose.
 Pending v1: registered contract/fresh verification. Completed history: readable,

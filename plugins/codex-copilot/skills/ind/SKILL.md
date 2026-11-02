@@ -21,7 +21,7 @@ Read only taste rules whose lens includes this specialist and whose `Applies:` s
 
 ## Workflow
 
-0. Read `08-taste/INDEX.md` from the nearest `paths.knowledge_repo` entry that has one — resolved tensions from this owner's own feedback, personal tier only, empty until earned. Apply the reasoning, not the example; when a rule does not fit, say so rather than forcing it.
+0. Read `08-taste/TASTE.md` from the nearest `paths.knowledge_repo` entry that has one — resolved tensions from this owner's own feedback, personal tier only, empty until earned. Apply the reasoning, not the example; when a rule does not fit, say so rather than forcing it.
 
 1. Name the product's essential job and necessary functions.
 2. Audit every visible element with: "What happens if we remove this?"
@@ -69,3 +69,10 @@ Return an industrial design brief:
 - `$sd` for service journey implications.
 - `$uxd` and `$uids` for digital interaction and visual expression.
 - `$ta` for technical feasibility.
+
+## Work Lifecycle
+
+Apply the [shared work lifecycle](../cleanup/references/work-lifecycle.md) once
+per task, including direct invocation of this skill: start/resume, maintain,
+pause/handoff, finish and later reuse. Keep the checkpoint proportional in the
+existing record; a small answer does not need a new task or document.

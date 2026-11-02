@@ -14,6 +14,7 @@ Use this skill to shape software as a service experience before screens or code.
 - Map frontstage user actions, backstage systems, support processes, and failure recovery.
 - Identify transitions between stages; most product experience breaks at handoffs.
 - Produce options with tradeoffs instead of a single assumed solution.
+- For collections or families, design one populated first example with real content (one journey; one narrative section; one item through the real path; one record plus one exception; one device and an observed action), show it, then expand.
 
 ## Taste Applicability
 
@@ -21,7 +22,7 @@ Read only taste rules whose lens includes this specialist and whose `Applies:` s
 
 ## Workflow
 
-0. Read `08-taste/INDEX.md` from the nearest `paths.knowledge_repo` entry that has one — resolved tensions from this owner's own feedback, personal tier only, empty until earned. Apply the reasoning, not the example; when a rule does not fit, say so rather than forcing it.
+0. Read `08-taste/TASTE.md` from the nearest `paths.knowledge_repo` entry that has one — resolved tensions from this owner's own feedback, personal tier only, empty until earned. Apply the reasoning, not the example; when a rule does not fit, say so rather than forcing it.
 
 1. Restate the real user or business outcome.
 2. Name assumptions and evidence. If evidence is missing, label hypotheses.
@@ -81,3 +82,10 @@ After implementation, record design judgment with `cc design review` before `cc 
 
 Load `cc design guide` for the full action catalog; retrieve focused guidance as needed instead of loading every playbook. `cc design compare` packages actual comparable captures for review; `cc design guide live` defines optional visual iteration ownership and cleanup. Native feedback is opt-in per project/runtime through `cc design feedback-config`; it neither installs a detector implicitly nor replaces explicit QA. See `cc design guide audit` for verification JSON and fallback rules.
 <!-- cse-design-quality:end -->
+
+## Work Lifecycle
+
+Apply the [shared work lifecycle](../cleanup/references/work-lifecycle.md) once
+per task, including direct invocation of this skill: start/resume, maintain,
+pause/handoff, finish and later reuse. Keep the checkpoint proportional in the
+existing record; a small answer does not need a new task or document.

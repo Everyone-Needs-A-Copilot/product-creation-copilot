@@ -20,7 +20,7 @@ Use this skill before non-trivial implementation.
 
 - Existing architecture and constraints are understood before recommendations.
 - Tradeoffs and rejected alternatives are documented.
-- Implementation tasks include explicit test requirements.
+- Implementation tasks name their verification tier (`tc task tier <id> T1|T2|T3 --reason "<text>"`, proposed from the planned diff; upward only, owner-only downgrades; untiered means T3) and the tests that tier requires: T1 new text present, old text gone, one browser load; T2 one or two renders plus the existing fast checks; T3 explicit unit, integration or end-to-end tests. See `../specialist-agents/references/verification-policy.md`.
 - Security, operations, data, and failure modes are called out when relevant.
 - Substantial plans are stored in `tc`, not loose markdown.
 - Third-party API assumptions are checked with `cc docs` when available.
@@ -31,7 +31,7 @@ Read only taste rules whose lens includes this specialist and whose `Applies:` s
 
 ## Workflow
 
-0. Read `08-taste/INDEX.md` from the nearest `paths.knowledge_repo` entry that has one — resolved tensions from this owner's own feedback, personal tier only, empty until earned. Apply the reasoning, not the example; when a rule does not fit, say so rather than forcing it.
+0. Read `08-taste/TASTE.md` from the nearest `paths.knowledge_repo` entry that has one — resolved tensions from this owner's own feedback, personal tier only, empty until earned. Apply the reasoning, not the example; when a rule does not fit, say so rather than forcing it.
 
 1. Check task context with `tc task get <taskId> --json` when a task exists.
 2. Hydrate config with `eval "$($HOME/.local/bin/cc env)"` when `cc` is available.
@@ -57,7 +57,7 @@ For non-trivial plans, iterate until the design has clear boundaries, no unresol
 ## Anti-Generic Rules
 
 - Do not choose technology without naming what was rejected and why.
-- Do not create implementation tasks without test requirements.
+- Do not create implementation tasks without a tier and the test requirements that tier needs.
 - Do not propose architecture without failure modes.
 - Do not create parallel streams with overlapping file ownership.
 
@@ -78,6 +78,10 @@ Return a concise architecture brief:
 - `$qa` when verification strategy needs shaping.
 - `$sec` for auth, permissions, secrets, PII, or trust boundaries.
 - `$do` for CI, deployment, observability, or environment design.
+
+## Contract From The Done Block
+
+Register the owner's confirmed done block: `tc task contract <id> --from-done-block <file>` (schemaVersion 4; `--kind document|design|research|automation` needs no sources). The owner's wording is each `expected`; add IDs, `sources` and the lane underneath. Add a WORK-LIFECYCLE criterion only when the work touches worktrees, deployment or deletion. For a collection, workflow family, integration or asset family, plan one populated first example, chosen as: one journey; one narrative section; one item through the real path; one record plus one exception; one device and an observed action.
 
 ## Delivery And Reuse Boundaries
 
@@ -132,4 +136,21 @@ checks the named database's acceptance contract and source coverage; detector or
 report readiness still never grants task approval. CLI/API and native adapters
 share the same tc authority. Missing current capabilities require a verified tc
 installation; legacy artifact inspection is not a current completion proof.
+Cross-repo scopes: schemaVersion 3 adds `externalSources: [{repo, ref, paths}]` for repos registered with `tc repo add`, hashed at the ref's commit; commit to the ref before QA.
 <!-- cse-evidence-v2:end -->
+
+## Work Lifecycle
+
+Apply the [shared work lifecycle](../cleanup/references/work-lifecycle.md) once
+per task, including direct invocation of this skill: start/resume, maintain,
+pause/handoff, finish and later reuse. Keep the checkpoint proportional in the
+existing record; a small answer does not need a new task or document.
+
+For substantial QA-required work, include an observable `WORK-LIFECYCLE` (or
+equivalent) criterion before acceptance is frozen. QA inspects the maintained
+record, applicable lesson-to-decision/check evidence, recovery/retirement results
+and explicit holds, using the shared lifecycle's acceptance guidance. A missing
+checkpoint cannot pass on metadata or a bare approval. A verified, in-scope hold
+can satisfy delivery checkpoint evidence while cleanup remains pending; it does
+not establish a cleanup or product-quality success. Preserve frozen scope and
+cumulative history for existing work.

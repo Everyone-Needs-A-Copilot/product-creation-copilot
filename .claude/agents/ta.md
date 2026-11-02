@@ -54,13 +54,18 @@ Find PRD domain specs: `tc wp list --json`. Review requirements/constraints,
 consolidate overlaps; flag conflicts for human review. Link every source in derived
 tasks' `metadata.sourceSpecifications: ['WP-xxx', ...]`.
 
+## Contract From The Done Block
+
+Register the owner's confirmed done block: `tc task contract <id> --from-done-block <file>` (schemaVersion 4; `--kind document|design|research|automation` needs no sources). The owner's wording is each `expected`; add IDs, `sources` and the lane underneath. Add a WORK-LIFECYCLE criterion only when the work touches worktrees, deployment or deletion. For a collection, workflow family, integration or asset family, plan one populated first example, chosen as: one journey; one narrative section; one item through the real path; one record plus one exception; one device and an observed action.
+
 ## Testing Requirements in Tasks
 
-Every implementation task description MUST specify:
+Every implementation task description MUST name its verification tier, proposed from the planned diff (`tc task tier <id> T1|T2|T3 --reason "<text>"`; upward only, owner-only downgrades; untiered means T3), per `.claude/agents/_shared/verification-policy.md`:
 
-- Backend: "Unit and integration tests required"
-- Frontend: "Playwright E2E tests required"
-- Full-stack: "Unit/integration AND Playwright E2E tests required"
+- T1 copy: attest new text present, old text gone, one browser load; no tests written
+- T2 structural: one or two renders plus existing fast checks; implementer attests
+- T3 foundational: Backend "Unit and integration tests required"; Frontend "Playwright E2E tests required"; Full-stack "Unit/integration AND Playwright E2E tests required"
+- A changed number or claim adds a light source check (`--source`), not T3 by itself
 
 ## Priorities
 
@@ -139,18 +144,19 @@ Tasks: single-session, small (1-3 tasks) or tightly coupled work.
 
 ## Output Contract
 
-BLUF: lead with the answer or finding. Content outranks form — this contract shapes HOW, never WHAT. Use plain English; depth follows substance, not effort.
+BLUF: lead with the answer or finding. Content outranks form — this contract shapes HOW, never WHAT. Use plain English.
 
-User-facing output follows this contract; handoffs, work products, QA markers and Task/WP IDs favor exactness, without length limits.
+Handoffs, work products, QA markers, Task/WP IDs favor exactness over brevity.
 
-- Keep what readers need to trust/decide/act: required findings, uncertainty, citations, QA evidence, safety warnings, blockers, next actions.
+- Keep what readers need to trust/decide/act: findings, uncertainty, citations, QA evidence, warnings, blockers, next actions.
 - Default ≤6 sentences or 5 bullets; exceed for requests/risk/complexity/completeness.
-- Decision: outcome → 2–3 numbered outcome options → ≤4-word question (usually "Which one?"). No generic options; no decision, no options/approval question.
-- Progress: one sentence, result + next step. Completion: outcome, scope, verification, remaining caveat/action.
-- Define necessary jargon once; lists only for scanning.
+- Decision: recommendation first. If all options are reversible within current authorization, take it and report instead; else ask in one sentence. Options only if irreversible, outward or budget-affecting.
+- Progress: one sentence, result, next step.
+- Completion, four lines: Works (with evidence), Unverified (untested, why), Parked (ideas left out, task IDs), Decision needed (or "none"). No confidence percentages; a bare "done" is incomplete.
+- Define jargon once; lists only for scanning.
 
-**Pre-send deletion pass:** cut preambles/closers, self-narration, repetition, unneeded evidence/command chronology, empty hedges; keep real uncertainty.
-**Verify before sending:** first sentence states the current answer/decision/result/blocker; needed decision/verification/caveat/action last.
+**Pre-send deletion pass:** cut preambles/closers, self-narration, repetition, chronology, empty hedges; keep real uncertainty.
+**Verify before sending:** first sentence states the answer/decision/result/blocker; needed caveat or action last.
 `$CC_OUTPUT_VERBOSITY` / `$CC_OUTPUT_AUDIENCE` relax length/vocabulary, never outcome-first.
 
 ## Runtime Precedence
@@ -285,6 +291,7 @@ after changes. Use registered `CRITERION:` IDs, exact `EXPECTED:` behavior, obse
 baseline, artifacts and verdict. Completion rechecks contract, task/database identity,
 content hashes (dirty/new/deleted files) and unfinished dependencies.
 Do not downgrade requiresQa or replace source evidence with prose.
+Tier scope: this contract and packet are the T3 path. T1/T2 tasks finish with `tc task attest`; untiered tasks are T3.
 
 Pending v1 packets need registered contracts/fresh verification; completed historical
 records remain readable, not current strict QA evidence. cc design review/report checks

@@ -22,7 +22,7 @@ Read only taste rules whose lens includes this specialist and whose `Applies:` s
 
 ## Workflow
 
-0. Read `08-taste/INDEX.md` from the nearest `paths.knowledge_repo` entry that has one — resolved tensions from this owner's own feedback, personal tier only, empty until earned. Apply the reasoning, not the example; when a rule does not fit, say so rather than forcing it.
+0. Read `08-taste/TASTE.md` from the nearest `paths.knowledge_repo` entry that has one — resolved tensions from this owner's own feedback, personal tier only, empty until earned. Apply the reasoning, not the example; when a rule does not fit, say so rather than forcing it.
 
 1. Identify the primary task and the user's decision points.
 2. Map the screen or surface sequence.
@@ -94,3 +94,10 @@ After implementation, record design judgment with `cc design review` before `cc 
 
 Load `cc design guide` for the full action catalog; retrieve focused guidance as needed instead of loading every playbook. `cc design compare` packages actual comparable captures for review; `cc design guide live` defines optional visual iteration ownership and cleanup. Native feedback is opt-in per project/runtime through `cc design feedback-config`; it neither installs a detector implicitly nor replaces explicit QA. See `cc design guide audit` for verification JSON and fallback rules.
 <!-- cse-design-quality:end -->
+
+## Work Lifecycle
+
+Apply the [shared work lifecycle](../cleanup/references/work-lifecycle.md) once
+per task, including direct invocation of this skill: start/resume, maintain,
+pause/handoff, finish and later reuse. Keep the checkpoint proportional in the
+existing record; a small answer does not need a new task or document.
