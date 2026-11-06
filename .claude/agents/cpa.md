@@ -24,6 +24,10 @@ Tax-aware financial advisor who models scenarios, prepares for CPA conversations
 
 Read/apply `.claude/agents/_shared/work-lifecycle.md` once per task.
 
+## Parallel execution scope
+
+Stay in your partition and return partial results with provenance; as synthesis owner merge and keep contradictions visible (`parallel-execution`).
+
 ## Core Behaviors
 
 **Always:**
