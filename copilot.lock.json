@@ -232,19 +232,19 @@
         }
       ],
       "ownership_mode": "full",
-      "release_tag": "v5.34.7",
-      "version": "5.34.7"
+      "release_tag": "v5.34.8",
+      "version": "5.34.8"
     },
     {
       "component": "codex",
       "files": [
         {
-          "checksum": "sha256:4c623f6bc15460286513bf5e2bc04fde478d8e12eed6b0c83dafd4a3e7b3a980",
+          "checksum": "sha256:4a543388b589e6c366375551f6afab0d995c6e2478a4ec5f52fc752a30e98ea8",
           "ownership": "framework",
           "path": "plugins/codex-copilot/.codex-plugin/plugin.json"
         },
         {
-          "checksum": "sha256:2a721f0369b8a223866280f85cf3774a010122da3411b7445e993a6ba7508c7b",
+          "checksum": "sha256:9d860771e96fe3f35ef70f6db1d297cb66220624840ffbf069f9b22c64dfafd7",
           "ownership": "framework",
           "path": "plugins/codex-copilot/agent-catalog.json"
         },
@@ -794,12 +794,12 @@
       "ownership_mode": "full",
       "provenance": {
         "layer": "codex-foundation",
-        "ref": "v0.16.6",
+        "ref": "v0.16.7",
         "signer": "SHA256:FIfppOkzwXZUAamELQzYoSUQXiEAmTYiVewHe1ACMZo",
-        "tree": "517b02191e419d2f9323a2a12c05f217af09bfc1"
+        "tree": "18412b4276c43690c35929c49e24159f6c021cfd"
       },
-      "release_tag": "v0.16.6",
-      "version": "0.16.6"
+      "release_tag": "v0.16.7",
+      "version": "0.16.7"
     }
   ],
   "mutations": [
