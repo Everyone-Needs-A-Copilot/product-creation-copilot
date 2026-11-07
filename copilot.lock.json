@@ -124,12 +124,12 @@
           "path": ".claude/agents/_shared/work-lifecycle.md"
         },
         {
-          "checksum": "sha256:aaf5ffbf1c3c5ce94dd2fa4830a613f3b14f25009479447340bc4828234787e5",
+          "checksum": "sha256:e07f0b7794e79f69476dcfc1ff1e6408034a97c3e926afb96935996dea4a030a",
           "ownership": "framework",
           "path": ".claude/agents/cco.md"
         },
         {
-          "checksum": "sha256:def63389224e0982e83f454789533e6c7efcbd9fcc8739e10e9dba77682bda0e",
+          "checksum": "sha256:b576d9466360ad0a7cda663558089a0494738a86dcc13546f28fa3065ffb7fb0",
           "ownership": "framework",
           "path": ".claude/agents/cpa.md"
         },
